@@ -12,6 +12,7 @@ public abstract class MessageHandler {
     public abstract void handle(String message, Game game);
 
     public String[] parseList(String message) {
+        System.out.println("MSG: " + message + " END\n");
         String players = message.substring(message.indexOf('[') + 2, message.indexOf(']'));
         return players.split("\n");
     }

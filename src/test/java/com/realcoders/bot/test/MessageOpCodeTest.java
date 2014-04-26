@@ -28,13 +28,13 @@ public class MessageOpCodeTest {
 
 //    @Test
 //    public void testPlayersList() {
-//        String msg = "Players [\n" +
-//                "MyBot\n" +
-//                "TestBot\n" +
-//                "]";
+//
+//
+//        String[] message = new String[]{"Players [\n", "MyBot\n", "TestBot\n", "]"};
 //
 //        PlayersHandler handler = new PlayersHandler();
-//        handler.handle(msg, null);
+//
+//        handler.handle(message, null);
 //        for (String item : handler.getPlayers()) {
 //            System.out.print("TEST: " + item + "\n");
 //        }

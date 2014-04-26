@@ -18,8 +18,6 @@ public class Player {
 	}
 
 
-
-
     public String getName() {
         return name;
     }
@@ -31,6 +29,7 @@ public class Player {
             //throw new RuntimeException();
         }
     }
+
 	public void playCard(CardType card) {
 		// if (cards.contains(card)) {
 		cards.removeFirstOccurrence(card);
