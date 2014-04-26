@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.realcoders.bot.test.MessageOpCodeTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+=======
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+>>>>>>> e1a586b7385306962ba2d00b3c0daf35077283e7
