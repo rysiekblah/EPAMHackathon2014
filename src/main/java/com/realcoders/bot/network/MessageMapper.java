@@ -86,6 +86,8 @@ public class MessageMapper {
 
         msgMap.put(CONDOTIERE, new CondotiereHandler());
         msgMap.put(MOVE, new MoveHandler());
+        msgMap.put(BISHOP, new BishopHandler());
+        msgMap.put(Q_RETRIEVE, new QRetrieveHandler());
 
     }
 
