@@ -12,7 +12,7 @@ public class Strategy {
 	}
 
 	byte getNeighboursCount(RegionMap rm) {
-		ArrayList<Region> regions = rm.getNeighbours();
+		ArrayList<RegionMap> regions = rm.getNeighbours();
 		return (byte) regions.size();
 	}
 

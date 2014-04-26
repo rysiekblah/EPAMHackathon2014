@@ -30,7 +30,7 @@ public class Player {
 		}
 	}
 
-	public LinkedList<RegionMap> addRegion(RegionMap r) {
+	public void addRegion(RegionMap r) {
 		owned.push(r);
 	}
 
