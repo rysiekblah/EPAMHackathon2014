@@ -32,8 +32,8 @@ public class MessageDispacher implements MessageProvider {
     public void start() {
         try {
             client.connect();
-            
-            client.sendMsg("AUTH password");
+
+            client.sendMsg("AUTH password\n");
             isRunning = true;
             worker.start();
         } catch (IOException e) {
