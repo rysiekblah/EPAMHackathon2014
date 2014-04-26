@@ -14,25 +14,59 @@ import java.util.LinkedList;
  * Created by Arek on 2014-04-26.
  */
 public class ScoreCouterTest {
+    private static Player createPlayerWithUsedCards(CardType ... cards){
+        LinkedList<CardType> cardList=new LinkedList<>();
+        for(CardType card : cards){
+            cardList.add(card);
+        }
+        Player player=new Player(cardList);
+        for(CardType card : cards){
+            player.playCard(card);
+        }
+        return player;
+    }
     @Test
     public void test1(){
-        LinkedList<CardType> redList=new LinkedList<>();
-        redList.add(CardType.CARD_1);
-        Player red=new Player(redList);
-        red.playCard(CardType.CARD_1);
-        LinkedList<CardType> blueList=new LinkedList<>();
-        blueList.add(CardType.CARD_2);
-        Player blue=new Player(blueList);
-        blue.playCard(CardType.CARD_2);
-        LinkedList<CardType> greenList=new LinkedList<>();
-        greenList.add(CardType.CARD_3);
-        greenList.add(CardType.CARD_4);
-        Player green=new Player(greenList);
-        green.playCard(CardType.CARD_3);
-        green.playCard(CardType.CARD_4);
+        Player red=createPlayerWithUsedCards(CardType.CARD_1, CardType.CARD_10);
+        Player blue=createPlayerWithUsedCards(CardType.CARD_3, CardType.CARD_6);
+        Player green=createPlayerWithUsedCards(CardType.CARD_2,CardType.CARD_2);
         Player [] playerArray = {green,red,blue};
         Game game = new Game(playerArray);
         ScoreCounter.updateScores(game);
-        System.out.println(red.getCurrentScore() +":"+blue.getCurrentScore()+":"+green.getCurrentScore());
+        System.out.println("test1:"+red.getCurrentScore() +":"+blue.getCurrentScore()+":"+green.getCurrentScore());
     }
+
+    @Test
+    public void testWinter(){
+        Player red=createPlayerWithUsedCards(CardType.CARD_1, CardType.CARD_10);
+        Player blue=createPlayerWithUsedCards(CardType.CARD_3, CardType.CARD_6);
+        Player green=createPlayerWithUsedCards(CardType.CARD_2,CardType.ZIMA);
+        Player [] playerArray = {green,red,blue};
+        Game game = new Game(playerArray);
+        ScoreCounter.updateScores(game);
+        System.out.println("zima:"+red.getCurrentScore() +":"+blue.getCurrentScore()+":"+green.getCurrentScore());
+    }
+
+    @Test
+    public void testSpring(){
+        Player red=createPlayerWithUsedCards(CardType.CARD_1, CardType.CARD_10);
+        Player blue=createPlayerWithUsedCards(CardType.CARD_3, CardType.CARD_6);
+        Player green=createPlayerWithUsedCards(CardType.CARD_2,CardType.WIOSNA);
+        Player [] playerArray = {green,red,blue};
+        Game game = new Game(playerArray);
+        ScoreCounter.updateScores(game);
+        System.out.println("wiosna:"+red.getCurrentScore() +":"+blue.getCurrentScore()+":"+green.getCurrentScore());
+    }
+
+    @Test
+    public void testDrummer(){
+        Player red=createPlayerWithUsedCards(CardType.CARD_1, CardType.CARD_10);
+        Player blue=createPlayerWithUsedCards(CardType.CARD_3, CardType.CARD_6);
+        Player green=createPlayerWithUsedCards(CardType.CARD_2,CardType.DOBOSZ,CardType.CARD_3);
+        Player [] playerArray = {green,red,blue};
+        Game game = new Game(playerArray);
+        ScoreCounter.updateScores(game);
+        System.out.println("dobosz:"+red.getCurrentScore() +":"+blue.getCurrentScore()+":"+green.getCurrentScore());
+    }
+
 }

@@ -13,11 +13,13 @@ public class ScoreCounter {
         if(isSummerInGame){
             strongestCard=getStrongestCard(game);
         }
+
         for(Player player : game.getPlayers()){
             int playerScore=0;
             int multiplier=1;
-            if(playerUsedDrummer(player))
-                multiplier=2;
+            if(playerUsedDrummer(player)) {
+                multiplier = 2;
+            }
             if(isWinterInGame){
                 for(CardType card : player.getUsed()){
                     if(card.isMercenary())
@@ -44,13 +46,20 @@ public class ScoreCounter {
                 }
             } else{
                 for(CardType card : player.getUsed())
-                     playerScore+=card.getPower();
+                    if (card.isMercenary())
+                        playerScore += card.getPower() * multiplier;
+                    else
+                        playerScore += card.getPower();
+
             }
             player.setCurrentScore(playerScore);
         }
     }
 
     private static boolean playerUsedDrummer(Player player) {
+        for (CardType card : player.getUsed())
+            if (card.equals(CardType.DOBOSZ))
+                return true;
         return false;
     }
 
