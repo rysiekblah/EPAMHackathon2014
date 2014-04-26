@@ -11,7 +11,7 @@ import com.realcoders.bot.Strategy;
 
 public class StrTest {
 
-	@Test
+	/*@Test
 	public void test() {
 		LinkedList<CardType> cards = new LinkedList<CardType>();
 		cards.add(CardType.CARD_10);
@@ -31,6 +31,6 @@ public class StrTest {
 			System.out.println(cardToRemove.toString());
 			g.getOurPlayer().playCard(cardToRemove);
 		}
-	}
+	}*/
 
 }
