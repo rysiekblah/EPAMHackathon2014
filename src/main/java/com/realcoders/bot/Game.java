@@ -2,21 +2,19 @@ package com.realcoders.bot;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
 
 public class Game {
 
 	private Player[] players;
-    private Player ourPlayer;
-    private ArrayList<Region> availableRegions= new ArrayList<Region>(Arrays.asList(Region.values()));
+	private Player ourPlayer;
+	private final ArrayList<Region> availableRegions = new ArrayList<Region>(
+			Arrays.asList(Region.values()));
 
+	private Region protectedRegion = null;
 
-    private Region protectedRegion =null;
+	public Game() {
 
-    public Game() {
-
-    }
+	}
 
 	public Game(Player[] players) {
 		this.players = players;
@@ -39,10 +37,14 @@ public class Game {
     }
 
     public CardType move(){
-        CardType card = ourPlayer.getCards().get((int) (Math.random()*ourPlayer.getCards().size()));
+        CardType card=null;
+        do {
+           card = ourPlayer.getCards().get((int) (Math.random() * ourPlayer.getCards().size()));
+        }while(CardType.KUKLA.equals(card) && ourPlayer.getUsed().size()==0);
         ourPlayer.playCard(card);
-        //ourPlayer.getCards().remove(card);
+            //ourPlayer.getCards().remove(card);
         return card;
+
     }
 
     public CardType retrieve(){
