@@ -10,6 +10,9 @@ public class PlayHandler extends MessageHandler {
     public void handle(String message, Game game) {
         String card = message.substring(message.indexOf(' ') + 1);
         System.out.println("Player card: " + card);
-        game.currentPlayerPlay(HandHandler.mapa.get(card));
+        String player = game.getCurrentPlayer().getName();
+        if(!player.equals(game.getOurPlayer().getName())) {
+            game.currentPlayerPlay(HandHandler.mapa.get(card));
+        }
     }
 }

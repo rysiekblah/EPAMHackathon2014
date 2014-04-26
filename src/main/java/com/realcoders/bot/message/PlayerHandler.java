@@ -15,8 +15,8 @@ public class PlayerHandler extends MessageHandler {
     public void handle(String message, Game game) {
         String player = message.substring(message.indexOf(' ') + 1);
         System.out.println("Player start play: " + player);
-        if (!player.equals(MessageMapper.BOT_ALIAS)) {
-            game.setCurrentPlayer(new Player(new LinkedList<CardType>(), player));
-        }
+
+        game.setCurrentPlayer(new Player(new LinkedList<CardType>(), player));
+
     }
 }
