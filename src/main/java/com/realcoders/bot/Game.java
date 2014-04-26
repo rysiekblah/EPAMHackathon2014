@@ -7,6 +7,7 @@ public class Game {
 
 	private Player[] players;
 	private Player ourPlayer;
+    private Player currentPlayer;
 	private final ArrayList<Region> availableRegions = new ArrayList<Region>(
 			Arrays.asList(Region.values()));
 
@@ -19,6 +20,17 @@ public class Game {
 	public Game(Player[] players) {
 		this.players = players;
 	}
+
+    public Player getCurrentPlayer() {
+        return currentPlayer;
+    }
+    public void currentPlayerPlay(CardType card){
+        currentPlayer.getUsed().add(card);
+    }
+
+    public void setCurrentPlayer(Player currentPlayer) {
+        this.currentPlayer = currentPlayer;
+    }
 
     public Player[] getPlayers() {
         return players;

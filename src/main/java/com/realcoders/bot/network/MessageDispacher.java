@@ -21,7 +21,7 @@ public class MessageDispacher implements MessageProvider {
             while (isRunning) {
                 try {
                     String msg = client.receiveMsg();
-                    System.out.println(msg);
+                    //System.out.println(msg);
                     if(!msg.startsWith("?"))
                         temporary.add(msg);
                     else {
