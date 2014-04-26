@@ -35,4 +35,31 @@ public enum RegionMap {
 		}
 		return retour;
 	}
+
+	public ArrayList<RegionMap> getNeighboursOwnedBy(Player p) {
+		ArrayList<RegionMap> retour = new ArrayList<RegionMap>();
+		for (Region r : neighbours) {
+			RegionMap rr = r.convert();
+			if (p.getRegions().contains(rr))
+				retour.add(rr);
+		}
+		return retour;
+	}
+
+	public ArrayList<RegionMap> getFreeRegionNeighbours(Game g) {
+		ArrayList<RegionMap> retour = new ArrayList<RegionMap>();
+		for (Region r : neighbours) {
+			RegionMap rr = r.convert();
+			try {
+				for (Player p : g.getPlayers()) {
+					if (p.getRegions().contains(rr))
+						throw new Exception();
+				}
+			} catch (Exception e) {
+			} finally {
+				retour.add(rr);
+			}
+		}
+		return retour;
+	}
 }

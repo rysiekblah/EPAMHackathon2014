@@ -59,4 +59,24 @@ public class Strategy {
 		return retour;
 	}
 
+	/*
+	 * 127 = region prowadzi bezpośrednio do wygranej 0 = region nie prowadzi
+	 * bezpośrednio do wygranej lub nie prowadzi
+	 */
+	public byte getRegionUsage(RegionMap r, Player p) {
+		ArrayList<RegionMap> target = target(p);
+		LinkedList<RegionMap> owned = p.getRegions();
+		if (target != null) {
+			for (RegionMap t : target) {
+				if (t.getNeighboursOwnedBy(p).size() == 3
+						&& t.getFreeRegionNeighbours(g).size() > 0)
+					return 127;
+			}
+		} else {
+			if (p.getRegions().size() == 5)
+				return 127;
+		}
+		return 0;
+	}
+
 }
