@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  */
 public class MessageDispacher implements MessageProvider {
 
-    private Client client;
+    private static Client client;
     private boolean isRunning;
     private ConcurrentLinkedQueue<String> messages = new ConcurrentLinkedQueue<String>();
     private ArrayList<String> temporary = new ArrayList<String>();
@@ -73,5 +73,12 @@ public class MessageDispacher implements MessageProvider {
         return messages.poll();
     }
 
+    public static void send(String msg) {
+        try {
+            client.sendMsg(msg);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

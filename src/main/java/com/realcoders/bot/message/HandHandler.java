@@ -15,7 +15,7 @@ import java.util.Map;
 public class HandHandler extends MessageHandler {
     private String[] cards;
 
-    private static Map<String, CardType> mapa = Maps.newHashMap();
+    public static Map<String, CardType> mapa = Maps.newHashMap();
 
     static {
         mapa.put("1", CardType.CARD_1);

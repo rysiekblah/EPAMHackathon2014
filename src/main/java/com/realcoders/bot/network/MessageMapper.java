@@ -32,6 +32,11 @@ public class MessageMapper {
     public static final String RETRIEVE = "Retrieve";
     public static final String SCORE = "Score";
 
+    public static final String CONDOTIERE = "?Condottiere";
+    public static final String MOVE = "?Move";
+    public static final String BISHOP = "?Bishop";
+    public static final String Q_RETRIEVE = "?Retrieve";
+
 
     static {
 
@@ -44,6 +49,18 @@ public class MessageMapper {
         msgMap.put(BATTLE_END, new BattleEndHander());
         msgMap.put(PLAYERS, new PlayersHandler());
         msgMap.put(HAND, new HandHandler());
+        msgMap.put(ORDER, new OrderHandler());
+        msgMap.put(PLAYER, new DummyHandler());
+        msgMap.put(CURRENT_ZONE, new DummyHandler());
+        msgMap.put(PASS, new DummyHandler());
+        msgMap.put(PLAY, new DummyHandler());
+        msgMap.put(PROTECT, new DummyHandler());
+        msgMap.put(RETRIEVE, new DummyHandler());
+        msgMap.put(SCORE, new DummyHandler());
+
+        msgMap.put(CONDOTIERE, new CondotiereHandler());
+        msgMap.put(MOVE, new MoveHandler());
+
     }
 
     public MessageHandler getHandler(String message) {
