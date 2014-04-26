@@ -19,13 +19,17 @@ public class ScoreCouterTest {
         LinkedList<CardType> redList=new LinkedList<>();
         redList.add(CardType.CARD_1);
         Player red=new Player(redList);
-        //red.
+        red.playCard(CardType.CARD_1);
         LinkedList<CardType> blueList=new LinkedList<>();
         blueList.add(CardType.CARD_2);
         Player blue=new Player(blueList);
+        blue.playCard(CardType.CARD_2);
         LinkedList<CardType> greenList=new LinkedList<>();
         greenList.add(CardType.CARD_3);
+        greenList.add(CardType.CARD_4);
         Player green=new Player(greenList);
+        green.playCard(CardType.CARD_3);
+        green.playCard(CardType.CARD_4);
         Player [] playerArray = {green,red,blue};
         Game game = new Game(playerArray);
         ScoreCounter.updateScores(game);
