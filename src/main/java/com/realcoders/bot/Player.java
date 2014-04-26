@@ -6,9 +6,11 @@ public class Player {
 
 	private final LinkedList<CardType> cards;
 	private LinkedList<CardType> used;
+	private final Game game;
 
-	Player(LinkedList<CardType> cards) {
+	Player(LinkedList<CardType> cards, Game game) {
 		this.cards = cards;
+		this.game = game;
 	}
 
 	void playCard(CardType card) {
