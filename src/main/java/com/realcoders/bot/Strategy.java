@@ -79,10 +79,8 @@ public class Strategy {
 		return 0;
 	}
 
-	public CardType getOptimalMove(Player p, RegionMap r) {
-		if (p.getCards().size() == 0)
-			return null;
-		boolean use = getRegionUsage(r, p) > 0;
+	public CardType getOptimalMove(Player p/* , RegionMap r */) {
+		/* boolean use = getRegionUsage(r, p) > 0; */
 		LinkedList<CardType> cards = p.getCards();
 		Player[] pl = game.getPlayers();
 		for (CardType card : cards) {
@@ -94,7 +92,8 @@ public class Strategy {
 			}
 		}
 		for (CardType card : cards) {
-			if (!card.equals(CardType.KAPITULACJA)) {
+			if (!card.equals(CardType.KAPITULACJA)
+					&& !card.equals(CardType.KUKLA)) {
 				return card;
 			}
 		}

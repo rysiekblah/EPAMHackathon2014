@@ -14,20 +14,22 @@ public class Player {
 		this.cards = cards;
 		// this.game = game;
 	}
-    public void removeCard(CardType card){
-        if (used.contains(card)) {
-            used.remove(card);
-        } else {
-            //throw new RuntimeException();
-        }
-    }
+
+	public void removeCard(CardType card) {
+		if (used.contains(card)) {
+			used.remove(card);
+		} else {
+			// throw new RuntimeException();
+		}
+	}
+
 	public void playCard(CardType card) {
-		//if (cards.contains(card)) {
-			cards.removeFirstOccurrence(card);
-			used.push(card);
-		//} else {
-			//throw new RuntimeException();
-		//}
+		// if (cards.contains(card)) {
+		cards.removeFirstOccurrence(card);
+		used.push(card);
+		// } else {
+		// throw new RuntimeException();
+		// }
 	}
 
 	public void addRegion(RegionMap r) {
