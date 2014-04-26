@@ -17,6 +17,16 @@ public class Player {
 		// this.game = game;
 	}
 
+<<<<<<< HEAD
+	public void removeCard(CardType card) {
+		if (used.contains(card)) {
+			used.remove(card);
+		} else {
+			// throw new RuntimeException();
+		}
+	}
+
+=======
     public String getName() {
         return name;
     }
@@ -28,13 +38,14 @@ public class Player {
             //throw new RuntimeException();
         }
     }
+>>>>>>> 69875b11e17c669054043bf3eeb3e98d15425327
 	public void playCard(CardType card) {
-		//if (cards.contains(card)) {
-			cards.removeFirstOccurrence(card);
-			used.push(card);
-		//} else {
-			//throw new RuntimeException();
-		//}
+		// if (cards.contains(card)) {
+		cards.removeFirstOccurrence(card);
+		used.push(card);
+		// } else {
+		// throw new RuntimeException();
+		// }
 	}
 
 	public void addRegion(RegionMap r) {
