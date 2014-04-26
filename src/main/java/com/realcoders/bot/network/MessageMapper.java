@@ -84,6 +84,9 @@ public class MessageMapper {
         msgMap.put(RETRIEVE, new DummyHandler());
         msgMap.put(SCORE, new DummyHandler());
 
+        msgMap.put(PLAY, new PlayHandler());
+        msgMap.put(PLAYER, new PlayerHandler());
+
         msgMap.put(CONDOTIERE, new CondotiereHandler());
         msgMap.put(MOVE, new MoveHandler());
         msgMap.put(BISHOP, new BishopHandler());
