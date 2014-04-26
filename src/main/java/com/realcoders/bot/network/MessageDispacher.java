@@ -40,6 +40,8 @@ public class MessageDispacher implements MessageProvider {
                             }
                         }
                         messages.add(msg);
+
+                        temporary = new ArrayList<String>();
                     }
                 } catch (IOException e) {
                     e.printStackTrace();

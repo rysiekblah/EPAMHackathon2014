@@ -54,7 +54,7 @@ public class HandHandler extends MessageHandler {
                 break;
             }
         }
-        //player.setCards(cardList);
+        player.setCards(cardList);
         System.out.println(player.toString());
         game.setOurPlayer(player);
     }

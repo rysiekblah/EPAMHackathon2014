@@ -16,7 +16,7 @@ public class MoveHandler extends MessageHandler {
         CardType cardType = game.move();
         for (Map.Entry<String, CardType> typeEntry : HandHandler.mapa.entrySet()) {
             if (typeEntry.getValue().equals(cardType)) {
-                MessageDispacher.send(typeEntry.getKey());
+                MessageDispacher.send(typeEntry.getKey()+'\n');
             }
         }
 
