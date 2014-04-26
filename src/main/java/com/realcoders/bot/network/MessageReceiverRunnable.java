@@ -22,6 +22,7 @@ public class MessageReceiverRunnable implements Runnable {
         while (isRunnign) {
             String message = provider.retrieveMessage();
             if (message != null) {
+                System.out.println(message);
                 mapper.getHandler(message).handle(message, game);
             }
         }

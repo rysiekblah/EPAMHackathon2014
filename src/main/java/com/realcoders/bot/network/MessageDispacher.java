@@ -1,6 +1,7 @@
 package com.realcoders.bot.network;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
@@ -11,6 +12,7 @@ public class MessageDispacher implements MessageProvider {
     private Client client;
     private boolean isRunning;
     private ConcurrentLinkedQueue<String> messages = new ConcurrentLinkedQueue<String>();
+    private ArrayList<String> temporary = new ArrayList<String>();
     private Thread worker = new Thread() {
         @Override
         public void run() {
@@ -18,8 +20,27 @@ public class MessageDispacher implements MessageProvider {
                 try {
                     String msg = client.receiveMsg();
                     System.out.println(msg);
-                    //if(msg!=null)
+                    if(!msg.startsWith("?"))
+                        temporary.add(msg);
+                    else {
+
+                        String tmpMsg=null;
+                        for(String line:temporary){
+                            if(tmpMsg!=null){
+                                tmpMsg+=line+'\n';
+                                if(line.contains("]")){
+                                    messages.add(tmpMsg);
+                                    tmpMsg=null;
+                                }
+
+                            }else if(line.contains("[")){
+                                tmpMsg=line+'\n';
+                            }else{
+                                messages.add(line);
+                            }
+                        }
                         messages.add(msg);
+                    }
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

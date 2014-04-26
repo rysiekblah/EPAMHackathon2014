@@ -4,9 +4,9 @@ import java.util.LinkedList;
 
 public class Player {
 
-	private final LinkedList<CardType> cards;
-	private final LinkedList<CardType> used = new LinkedList<CardType>();
-	private final LinkedList<RegionMap> owned = new LinkedList<RegionMap>();
+	private  LinkedList<CardType> cards;
+	private  LinkedList<CardType> used = new LinkedList<CardType>();
+	private  LinkedList<RegionMap> owned = new LinkedList<RegionMap>();
 	// private final Game game;
 	private int currentScore = 0;
     private String name;
@@ -65,6 +65,10 @@ public class Player {
 
     @Override
     public String toString() {
-        return "PlayerName: " + name + ", cards: " + cards.toString();
+        return "PlayerName: " + name + ", cards: " + cards;
+    }
+
+    public void setCards(LinkedList<CardType> cards) {
+        this.cards = cards;
     }
 }

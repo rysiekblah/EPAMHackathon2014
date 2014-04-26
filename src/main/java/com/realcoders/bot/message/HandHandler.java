@@ -46,13 +46,16 @@ public class HandHandler extends MessageHandler {
             cardList.add(mapa.get(card));
         }
         Player player =  null;
+        //System.out.println("plaersSize:"+game.getPlayers().length);
         for(Player plr: game.getPlayers()){
-            if(plr.getName()== MessageMapper.BOT_ALIAS) {
+            //System.out.println("plaersSize:"+plr.getName());
+            if(plr.getName().equals( MessageMapper.BOT_ALIAS)) {
                 player = plr;
                 break;
             }
         }
-        player.toString();
+        //player.setCards(cardList);
+        System.out.println(player.toString());
         game.setOurPlayer(player);
     }
 }
