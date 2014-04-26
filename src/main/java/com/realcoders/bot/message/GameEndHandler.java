@@ -7,7 +7,7 @@ import com.realcoders.bot.network.MessageMapper;
  */
 public class GameEndHandler extends MessageHandler {
     @Override
-    public void handle(String message) {
+    public void handle(String message, Game game) {
         if (message.contains(MessageMapper.BOT_ALIAS)) {
             // notify that we have won
         } else {

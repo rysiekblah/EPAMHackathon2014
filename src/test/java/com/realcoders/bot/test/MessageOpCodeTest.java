@@ -1,7 +1,6 @@
 package com.realcoders.bot.test;
 
 import com.realcoders.bot.message.PlayersHandler;
-import com.realcoders.bot.network.Message;
 import com.realcoders.bot.network.MessageMapper;
 import org.junit.Test;
 
@@ -35,7 +34,7 @@ public class MessageOpCodeTest {
                 "]";
 
         PlayersHandler handler = new PlayersHandler();
-        handler.handle(msg);
+        handler.handle(msg, );
         for (String item : handler.getPlayers()) {
             System.out.print("TEST: " + item + "\n");
         }

@@ -5,7 +5,7 @@ package com.realcoders.bot.message;
  */
 public class BattleEndHander extends MessageHandler {
     @Override
-    public void handle(String message) {
+    public void handle(String message, Game game) {
 
     }
 }

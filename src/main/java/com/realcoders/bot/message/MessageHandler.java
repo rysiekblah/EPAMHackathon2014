@@ -1,5 +1,7 @@
 package com.realcoders.bot.message;
 
+import com.realcoders.bot.Game;
+
 import java.util.Map;
 
 /**
@@ -7,7 +9,7 @@ import java.util.Map;
  */
 public abstract class MessageHandler {
 
-    public abstract void handle(String message);
+    public abstract void handle(String message, Game game);
 
     public String[] parseList(String message) {
         String players = message.substring(message.indexOf('[') + 2, message.indexOf(']'));

@@ -9,11 +9,18 @@ public class Player {
 	private final LinkedList<RegionMap> owned = new LinkedList<RegionMap>();
 	// private final Game game;
 	private int currentScore = 0;
+    private String name;
 
-	public Player(LinkedList<CardType> cards) {
+	public Player(LinkedList<CardType> cards, String name) {
 		this.cards = cards;
+        this.name = name;
 		// this.game = game;
 	}
+
+    public String getName() {
+        return name;
+    }
+
     public void removeCard(CardType card){
         if (used.contains(card)) {
             used.remove(card);
@@ -53,4 +60,9 @@ public class Player {
 	public void setCurrentScore(int currentScore) {
 		this.currentScore = currentScore;
 	}
+
+    @Override
+    public String toString() {
+        return "PlayerName: " + name + ", cards: " + cards.toString();
+    }
 }
