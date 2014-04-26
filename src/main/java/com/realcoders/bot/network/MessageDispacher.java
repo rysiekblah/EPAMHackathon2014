@@ -11,6 +11,8 @@ public class MessageDispacher implements MessageProvider {
 
     private static Client client;
     private boolean isRunning;
+    private String name;
+    private String pass;
     private ConcurrentLinkedQueue<String> messages = new ConcurrentLinkedQueue<String>();
     private ArrayList<String> temporary = new ArrayList<String>();
     private Thread worker = new Thread() {
@@ -50,14 +52,16 @@ public class MessageDispacher implements MessageProvider {
         }
     };
 
-    public MessageDispacher() {
+    public MessageDispacher(String name, String pass) {
         client = new Client("localhost", 1234);
+        this.name = name;
+        this.pass = pass;
     }
 
     public void start() {
         try {
             client.connect();
-            client.sendMsg("AUTH password\n");
+            client.sendMsg("AUTH " + pass + "\n");
             isRunning = true;
             worker.start();
         } catch (IOException e) {

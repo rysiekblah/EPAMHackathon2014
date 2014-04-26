@@ -1,6 +1,7 @@
 package com.realcoders.bot;
 
 import com.realcoders.bot.network.MessageDispacher;
+import com.realcoders.bot.network.MessageMapper;
 import com.realcoders.bot.network.MessageReceiverRunnable;
 
 /**
@@ -8,13 +9,17 @@ import com.realcoders.bot.network.MessageReceiverRunnable;
  */
 public class Bot {
 
-	private final MessageDispacher dispacher = new MessageDispacher();
+
 
 	public static void main(String args[]) {
-		Bot bot = new Bot();
-		bot.dispacher.start();
+        String name = args[0];
+        String pass = args[1];
+        Bot bot = new Bot();
+        MessageMapper.BOT_ALIAS = name;
+        MessageDispacher dispacher = new MessageDispacher(name, pass);
+		dispacher.start();
 		Thread messageHandlerWorker = new Thread(new MessageReceiverRunnable(
-				bot.dispacher));
+				dispacher));
 		messageHandlerWorker.start();
 	}
 }
