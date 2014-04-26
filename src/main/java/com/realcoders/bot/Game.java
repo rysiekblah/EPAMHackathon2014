@@ -68,7 +68,10 @@ public class Game {
         return region;
 
     }
+    public void regionTaken(Region region){
+        availableRegions.remove(region);
 
+    }
     public Region getProtectedRegion() {
         return protectedRegion;
     }

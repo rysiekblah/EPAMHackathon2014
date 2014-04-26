@@ -1,9 +1,6 @@
 package com.realcoders.bot.test;
 
-import com.realcoders.bot.CardType;
-import com.realcoders.bot.Game;
-import com.realcoders.bot.Player;
-import com.realcoders.bot.ScoreCounter;
+import com.realcoders.bot.*;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -79,11 +76,11 @@ public class ScoreCouterTest {
 
     @Test
     public void testGame(){
-        Player green=createPlayerWithCards(CardType.CARD_2,CardType.DOBOSZ,CardType.CARD_3);
+        Player green=createPlayerWithCards(CardType.CARD_2, CardType.DOBOSZ, CardType.CARD_3);
         Player [] playerArray = {green};
         Game game = new Game(playerArray);
         game.setOurPlayer(green);
-        System.out.println("testGame:"+game.move());
+        System.out.println("testGame:" + game.move());
         System.out.println("testGame:"+game.move());
         System.out.println("retrieve:"+game.retrieve());
         System.out.println("testGame:"+game.move());
@@ -98,17 +95,17 @@ public class ScoreCouterTest {
         Game game = new Game(playerArray);
         game.setOurPlayer(green);
         System.out.println("con:"+game.condotiere());
+        System.out.println("con:" + game.condotiere());
         System.out.println("con:"+game.condotiere());
         System.out.println("con:"+game.condotiere());
         System.out.println("con:"+game.condotiere());
         System.out.println("con:"+game.condotiere());
+        System.out.println("con:" + game.condotiere());
         System.out.println("con:"+game.condotiere());
         System.out.println("con:"+game.condotiere());
         System.out.println("con:"+game.condotiere());
         System.out.println("con:"+game.condotiere());
-        System.out.println("con:"+game.condotiere());
-        System.out.println("con:"+game.condotiere());
-        System.out.println("con:"+game.condotiere());
+        System.out.println("con:" + game.condotiere());
         System.out.println("con:"+game.condotiere());
         System.out.println("con:"+game.condotiere());
         System.out.println("con:"+game.condotiere());
@@ -116,4 +113,14 @@ public class ScoreCouterTest {
         System.out.println("con:"+game.condotiere());
     }
 
+    @Test
+    public void testStrategy(){
+
+        Player red=createPlayerWithUsedCards(CardType.CARD_1, CardType.CARD_10);
+        Player blue=createPlayerWithUsedCards(CardType.CARD_3, CardType.CARD_6);
+        Player green=createPlayerWithUsedCards(CardType.CARD_2,CardType.DOBOSZ,CardType.CARD_3);
+        Player [] playerArray = {green,red,blue};
+        Game game = new Game(playerArray);
+        Strategy strategy = new Strategy(game);
+    }
 }

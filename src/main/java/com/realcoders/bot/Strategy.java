@@ -7,7 +7,7 @@ public class Strategy {
 
 	private final Game game;
 
-	Strategy(Game game) {
+	public Strategy(Game game) {
 		this.game = game;
 	}
 
