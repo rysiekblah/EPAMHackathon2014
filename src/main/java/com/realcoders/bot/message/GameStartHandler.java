@@ -6,6 +6,6 @@ package com.realcoders.bot.message;
 public class GameStartHandler implements MessageHandler {
     @Override
     public void handle(String message) {
-
+        System.out.println("Game START");
     }
 }
