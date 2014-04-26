@@ -42,6 +42,9 @@ public class Game {
         return false;
     }
     public CardType move(){
+
+        System.out.println("cards: "+ourPlayer.getCards());
+        System.out.println("usedcards"+ourPlayer.getUsed());
         if(ourPlayer.getCards().size()==0)
             return null;
         CardType card=null;

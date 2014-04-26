@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.realcoders.bot.test.ScoreCouterTest
 -------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
-=======
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
->>>>>>> f6318287c9b606feb34c5f5650541094f0fd9db4
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec

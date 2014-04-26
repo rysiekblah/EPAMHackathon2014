@@ -50,6 +50,9 @@ public class Player {
 	public LinkedList<CardType> getUsed() {
 		return used;
 	}
+    public void clearUsed(){
+        used = new LinkedList<>();
+    }
 
 	public LinkedList<CardType> getCards() {
 		return cards;
