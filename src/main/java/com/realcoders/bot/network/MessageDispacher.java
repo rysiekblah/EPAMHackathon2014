@@ -55,8 +55,8 @@ public class MessageDispacher implements MessageProvider {
         }
     };
 
-    public MessageDispacher(String name, String pass) {
-        client = new Client("localhost", 1234);
+    public MessageDispacher(String name, String pass, String host,int port) {
+        client = new Client(host, port);
         this.name = name;
         this.pass = pass;
     }
