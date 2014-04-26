@@ -21,5 +21,13 @@ public class Bot {
 		Thread messageHandlerWorker = new Thread(new MessageReceiverRunnable(
 				dispacher));
 		messageHandlerWorker.start();
+        while(dispacher.isRunning())
+            try {
+                //System.out.println("---"+dispacher.isRunning());
+                Thread.currentThread().sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        System.exit(1);
 	}
 }

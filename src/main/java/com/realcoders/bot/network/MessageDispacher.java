@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public class MessageDispacher implements MessageProvider {
 
     private static Client client;
-    private boolean isRunning;
+    private volatile boolean isRunning;
     private String name;
     private String pass;
     private ConcurrentLinkedQueue<String> messages = new ConcurrentLinkedQueue<String>();
@@ -47,6 +47,8 @@ public class MessageDispacher implements MessageProvider {
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
+                    isRunning=false;
+
                     break;
                 }
             }
@@ -88,4 +90,7 @@ public class MessageDispacher implements MessageProvider {
         }
     }
 
-}
+    public boolean isRunning() {
+        return isRunning;
+    }
+    }

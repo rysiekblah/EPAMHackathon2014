@@ -84,10 +84,12 @@ public class Game {
         if(ourPlayer.getCards().size()==0)
             return null;
         CardType card=null;
-        do {
-           card = ourPlayer.getCards().get((int) (Math.random() * ourPlayer.getCards().size()));
-        }while(CardType.KUKLA.equals(card) &&
-                ((ourPlayer.getUsed().size()==0 || !playerUseAnyMercenary()) && ourPlayer.getCards().size()>1));
+        for(int i=0;i<10;i++)
+            do {
+               card = ourPlayer.getCards().get((int) (Math.random() * ourPlayer.getCards().size()));
+            }while(CardType.KUKLA.equals(card) && (ourPlayer.getUsed().size()==0 || !playerUseAnyMercenary()));
+        if(card==null)
+            return null;
         ourPlayer.playCard(card);
             //ourPlayer.getCards().remove(card);
         if(CardType.BISKUP.equals(card))

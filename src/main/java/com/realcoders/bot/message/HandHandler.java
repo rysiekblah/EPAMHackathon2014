@@ -47,7 +47,7 @@ public class HandHandler extends MessageHandler {
         }
         Player player =  null;
         //System.out.println("plaersSize:"+game.getPlayers().length);
-        for(Player plr: game.getPlayers()){
+        for(Player plr : game.getPlayers()){
             //System.out.println("plaersSize:"+plr.getName());
             if(plr.getName().equals( MessageMapper.BOT_ALIAS)) {
                 player = plr;

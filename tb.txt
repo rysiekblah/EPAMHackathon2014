@@ -13,41 +13,370 @@ TestBot
 
 RoundStart 1
 Hand [
-Heroine
-6
-4
-4
-Drummer
+Scarecrow
 5
-10
-10
+Spring
+Bishop
+1
 Scarecrow
+4
+3
 Scarecrow
+4
 ]
 
 MSG: Hand [
-Heroine
-6
-4
-4
-Drummer
+Scarecrow
 5
-10
-10
+Spring
+Bishop
+1
 Scarecrow
+4
+3
 Scarecrow
+4
 ]
  END
 
-PlayerName: RealCoders, cards: [BOHATERKA, CARD_6, CARD_4, CARD_4, DOBOSZ, CARD_5, CARD_10, CARD_10, KUKLA, KUKLA]
+PlayerName: RealCoders, cards: [KUKLA, CARD_5, WIOSNA, BISKUP, CARD_1, KUKLA, CARD_4, CARD_3, KUKLA, CARD_4]
 BattleStart 1
 Order [
 RealCoders
 TestBot
 ]
 
-CurrentZone Napoli
-Zone to remove: Napoli
+CurrentZone Genova
+Zone to remove: Genova
+Player RealCoders
+Player start play: RealCoders
+Play 6
+Player card: 6
+Score {
+RealCoders=6
+TestBot=0
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, CARD_5, WIOSNA, BISKUP, CARD_1, KUKLA, CARD_4, CARD_3, KUKLA, CARD_4]
+usedcards[]
+Play 1
+Player card: 1
+Score {
+RealCoders=6
+TestBot=1
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 6
+Player card: 6
+Score {
+RealCoders=12
+TestBot=1
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, CARD_5, WIOSNA, BISKUP, KUKLA, CARD_4, CARD_3, KUKLA, CARD_4]
+usedcards[CARD_1]
+Play Bishop
+Player card: Bishop
+?Bishop
+Protect Ancona
+Score {
+RealCoders=0
+TestBot=1
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Winter
+Player card: Winter
+Score {
+RealCoders=0
+TestBot=1
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, CARD_5, WIOSNA, KUKLA, CARD_4, CARD_3, KUKLA, CARD_4]
+usedcards[]
+Play 4
+Player card: 4
+Score {
+RealCoders=0
+TestBot=2
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 5
+Player card: 5
+Score {
+RealCoders=1
+TestBot=2
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, CARD_5, WIOSNA, KUKLA, CARD_3, KUKLA, CARD_4]
+usedcards[CARD_4]
+Play Scarecrow
+Player card: Scarecrow
+?Retrieve
+Retrieve 4
+Score {
+RealCoders=1
+TestBot=1
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 2
+Player card: 2
+Score {
+RealCoders=2
+TestBot=1
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_5, WIOSNA, KUKLA, CARD_3, KUKLA, CARD_4, CARD_4]
+usedcards[KUKLA]
+Play 4
+Player card: 4
+Score {
+RealCoders=2
+TestBot=2
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 1
+Player card: 1
+Score {
+RealCoders=3
+TestBot=2
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_5, WIOSNA, KUKLA, CARD_3, KUKLA, CARD_4]
+usedcards[CARD_4, KUKLA]
+Play Spring
+Player card: Spring
+Score {
+RealCoders=11
+TestBot=5
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Courtesan
+Player card: Courtesan
+Score {
+RealCoders=12
+TestBot=5
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_5, KUKLA, CARD_3, KUKLA, CARD_4]
+usedcards[WIOSNA, CARD_4, KUKLA]
+Play Scarecrow
+Player card: Scarecrow
+?Retrieve
+Retrieve 4
+Score {
+RealCoders=12
+TestBot=1
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 3
+Player card: 3
+Score {
+RealCoders=15
+TestBot=1
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_5, CARD_3, KUKLA, CARD_4, CARD_4]
+usedcards[KUKLA, WIOSNA, KUKLA]
+Play 4
+Player card: 4
+Score {
+RealCoders=15
+TestBot=5
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Scarecrow
+Player card: Scarecrow
+Retrieve 5
+Score {
+RealCoders=7
+TestBot=8
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_5, CARD_3, KUKLA, CARD_4]
+usedcards[CARD_4, KUKLA, WIOSNA, KUKLA]
+Play Scarecrow
+Player card: Scarecrow
+?Retrieve
+Retrieve 4
+Score {
+RealCoders=10
+TestBot=1
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Scarecrow
+Player card: Scarecrow
+Retrieve 3
+Score {
+RealCoders=7
+TestBot=1
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_5, CARD_3, CARD_4, CARD_4]
+usedcards[KUKLA, KUKLA, WIOSNA, KUKLA]
+Play 3
+Player card: 3
+Score {
+RealCoders=4
+TestBot=7
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 3
+Player card: 3
+Score {
+RealCoders=10
+TestBot=7
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_5, CARD_4, CARD_4]
+usedcards[CARD_3, KUKLA, KUKLA, WIOSNA, KUKLA]
+Play 5
+Player card: 5
+Score {
+RealCoders=7
+TestBot=12
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 5
+Player card: 5
+Score {
+RealCoders=15
+TestBot=12
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_4, CARD_4]
+usedcards[CARD_5, CARD_3, KUKLA, KUKLA, WIOSNA, KUKLA]
+Play 4
+Player card: 4
+Score {
+RealCoders=15
+TestBot=16
+}
+
+Player RealCoders
+Player start play: RealCoders
+Pass
+Score {
+RealCoders=15
+TestBot=16
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_4]
+usedcards[CARD_4, CARD_5, CARD_3, KUKLA, KUKLA, WIOSNA, KUKLA]
+Play 4
+Player card: 4
+Score {
+RealCoders=15
+TestBot=20
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: []
+usedcards[CARD_4, CARD_4, CARD_5, CARD_3, KUKLA, KUKLA, WIOSNA, KUKLA]
+Pass
+BattleEnd TestBot
+RoundEnd
+RoundStart 2
+Hand [
+6
+1
+2
+4
+Scarecrow
+Drummer
+10
+Bishop
+Courtesan
+10
+6
+]
+
+MSG: Hand [
+6
+1
+2
+4
+Scarecrow
+Drummer
+10
+Bishop
+Courtesan
+10
+6
+]
+ END
+
+PlayerName: RealCoders, cards: [CARD_6, CARD_1, CARD_2, CARD_4, KUKLA, DOBOSZ, CARD_10, BISKUP, KURTYZANA, CARD_10, CARD_6]
+BattleStart 2
+Order [
+RealCoders
+TestBot
+]
+
+CurrentZone Venezia
+Zone to remove: Venezia
 Player RealCoders
 Player start play: RealCoders
 Play 2
@@ -60,100 +389,73 @@ TestBot=0
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [BOHATERKA, CARD_6, CARD_4, CARD_4, DOBOSZ, CARD_5, CARD_10, CARD_10, KUKLA, KUKLA]
+cards: [CARD_6, CARD_1, CARD_2, CARD_4, KUKLA, DOBOSZ, CARD_10, BISKUP, KURTYZANA, CARD_10, CARD_6]
 usedcards[]
+Play 1
+Player card: 1
+Score {
+RealCoders=2
+TestBot=1
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Courtesan
+Player card: Courtesan
+Score {
+RealCoders=3
+TestBot=1
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_6, CARD_2, CARD_4, KUKLA, DOBOSZ, CARD_10, BISKUP, KURTYZANA, CARD_10, CARD_6]
+usedcards[CARD_1]
 Play 6
 Player card: 6
 Score {
-RealCoders=2
-TestBot=6
+RealCoders=3
+TestBot=7
 }
 
 Player RealCoders
 Player start play: RealCoders
-Play 10
-Player card: 10
+Play Key
+Player card: Key
 Score {
-RealCoders=12
-TestBot=6
+RealCoders=3
+TestBot=7
 }
 
-Player TestBot
-Player start play: TestBot
-?Move
-cards: [BOHATERKA, CARD_4, CARD_4, DOBOSZ, CARD_5, CARD_10, CARD_10, KUKLA, KUKLA]
-usedcards[CARD_6]
+BattleEnd TestBot
+BattleStart 3
+Order [
+RealCoders
+TestBot
+]
+
+CurrentZone Modena
+Zone to remove: Modena
+Player RealCoders
+Player start play: RealCoders
 Play Drummer
 Player card: Drummer
 Score {
-RealCoders=12
-TestBot=12
-}
-
-Player RealCoders
-Player start play: RealCoders
-Play Scarecrow
-Player card: Scarecrow
-Retrieve 10
-Score {
-RealCoders=2
-TestBot=12
-}
-
-Player TestBot
-Player start play: TestBot
-?Move
-cards: [BOHATERKA, CARD_4, CARD_4, CARD_5, CARD_10, CARD_10, KUKLA, KUKLA]
-usedcards[DOBOSZ, CARD_6]
-Play Scarecrow
-Player card: Scarecrow
-?Retrieve
-Retrieve 6
-Score {
-RealCoders=2
-TestBot=0
-}
-
-Player RealCoders
-Player start play: RealCoders
-Play 10
-Player card: 10
-Score {
-RealCoders=12
+RealCoders=0
 TestBot=0
 }
 
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [BOHATERKA, CARD_4, CARD_4, CARD_5, CARD_10, CARD_10, KUKLA, CARD_6]
-usedcards[KUKLA, DOBOSZ]
-Play 6
-Player card: 6
-Score {
-RealCoders=12
-TestBot=12
-}
-
-Player RealCoders
-Player start play: RealCoders
+cards: [CARD_2, CARD_4, KUKLA, DOBOSZ, CARD_10, BISKUP, KURTYZANA, CARD_10, CARD_6]
+usedcards[]
 Play Drummer
 Player card: Drummer
 Score {
-RealCoders=24
-TestBot=12
-}
-
-Player TestBot
-Player start play: TestBot
-?Move
-cards: [BOHATERKA, CARD_4, CARD_4, CARD_5, CARD_10, CARD_10, KUKLA]
-usedcards[CARD_6, KUKLA, DOBOSZ]
-Play 5
-Player card: 5
-Score {
-RealCoders=24
-TestBot=22
+RealCoders=0
+TestBot=0
 }
 
 Player RealCoders
@@ -161,22 +463,20 @@ Player start play: RealCoders
 Play 5
 Player card: 5
 Score {
-RealCoders=34
-TestBot=22
+RealCoders=10
+TestBot=0
 }
 
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [BOHATERKA, CARD_4, CARD_4, CARD_10, CARD_10, KUKLA]
-usedcards[CARD_5, CARD_6, KUKLA, DOBOSZ]
-Play Scarecrow
-Player card: Scarecrow
-?Retrieve
-Retrieve 6
+cards: [CARD_2, CARD_4, KUKLA, CARD_10, BISKUP, KURTYZANA, CARD_10, CARD_6]
+usedcards[DOBOSZ]
+Play 10
+Player card: 10
 Score {
-RealCoders=34
-TestBot=10
+RealCoders=10
+TestBot=20
 }
 
 Player RealCoders
@@ -184,42 +484,228 @@ Player start play: RealCoders
 Play 3
 Player card: 3
 Score {
-RealCoders=40
-TestBot=10
+RealCoders=16
+TestBot=20
 }
 
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [BOHATERKA, CARD_4, CARD_4, CARD_10, CARD_10, CARD_6]
-usedcards[KUKLA, CARD_5, KUKLA, DOBOSZ]
+cards: [CARD_2, CARD_4, KUKLA, BISKUP, KURTYZANA, CARD_10, CARD_6]
+usedcards[CARD_10, DOBOSZ]
+Play 6
+Player card: 6
+Score {
+RealCoders=16
+TestBot=32
+}
+
+Player RealCoders
+Player start play: RealCoders
 Play Heroine
 Player card: Heroine
 Score {
-RealCoders=40
+RealCoders=26
+TestBot=32
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_2, CARD_4, KUKLA, BISKUP, KURTYZANA, CARD_10]
+usedcards[CARD_6, CARD_10, DOBOSZ]
+Play 4
+Player card: 4
+Score {
+RealCoders=26
+TestBot=40
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 4
+Player card: 4
+Score {
+RealCoders=34
+TestBot=40
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_2, KUKLA, BISKUP, KURTYZANA, CARD_10]
+usedcards[CARD_4, CARD_6, CARD_10, DOBOSZ]
+Play Bishop
+Player card: Bishop
+?Bishop
+Protect Ancona
+Score {
+RealCoders=34
 TestBot=20
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 2
+Player card: 2
+Score {
+RealCoders=38
+TestBot=20
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_2, KUKLA, KURTYZANA, CARD_10]
+usedcards[BISKUP, CARD_4, DOBOSZ]
+Play Courtesan
+Player card: Courtesan
+Score {
+RealCoders=38
+TestBot=21
 }
 
 Player RealCoders
 Player start play: RealCoders
 Play Scarecrow
 Player card: Scarecrow
-Retrieve 10
+Retrieve 4
 Score {
-RealCoders=20
-TestBot=20
+RealCoders=30
+TestBot=21
 }
 
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [CARD_4, CARD_4, CARD_10, CARD_10, CARD_6]
-usedcards[BOHATERKA, KUKLA, CARD_5, KUKLA, DOBOSZ]
-Play 6
-Player card: 6
+cards: [CARD_2, KUKLA, CARD_10]
+usedcards[KURTYZANA, BISKUP, CARD_4, DOBOSZ]
+Play Scarecrow
+Player card: Scarecrow
+?Retrieve
+Retrieve 4
 Score {
-RealCoders=20
-TestBot=32
+RealCoders=30
+TestBot=13
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 4
+Player card: 4
+Score {
+RealCoders=38
+TestBot=13
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_2, CARD_10, CARD_4]
+usedcards[KUKLA, KURTYZANA, BISKUP, DOBOSZ]
+Play 4
+Player card: 4
+Score {
+RealCoders=38
+TestBot=21
+}
+
+Player RealCoders
+Player start play: RealCoders
+Pass
+Score {
+RealCoders=38
+TestBot=21
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_2, CARD_10]
+usedcards[CARD_4, KUKLA, KURTYZANA, BISKUP, DOBOSZ]
+Play 2
+Player card: 2
+Score {
+RealCoders=38
+TestBot=25
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_10]
+usedcards[CARD_2, CARD_4, KUKLA, KURTYZANA, BISKUP, DOBOSZ]
+Play 10
+Player card: 10
+Score {
+RealCoders=38
+TestBot=45
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: []
+usedcards[CARD_10, CARD_2, CARD_4, KUKLA, KURTYZANA, BISKUP, DOBOSZ]
+Pass
+BattleEnd TestBot
+RoundEnd
+RoundStart 3
+Hand [
+Bishop
+4
+Courtesan
+Winter
+Bishop
+2
+Key
+Courtesan
+Scarecrow
+Drummer
+4
+Spring
+Bishop
+]
+
+MSG: Hand [
+Bishop
+4
+Courtesan
+Winter
+Bishop
+2
+Key
+Courtesan
+Scarecrow
+Drummer
+4
+Spring
+Bishop
+]
+ END
+
+PlayerName: RealCoders, cards: [BISKUP, CARD_4, KURTYZANA, ZIMA, BISKUP, CARD_2, KAPITULACJA, KURTYZANA, KUKLA, DOBOSZ, CARD_4, WIOSNA, BISKUP]
+BattleStart 4
+Order [
+TestBot
+RealCoders
+]
+
+?Condottiere
+CurrentZone Urbino
+Zone to remove: Urbino
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [BISKUP, CARD_4, KURTYZANA, ZIMA, BISKUP, CARD_2, KAPITULACJA, KURTYZANA, KUKLA, DOBOSZ, CARD_4, WIOSNA, BISKUP]
+usedcards[]
+Play Bishop
+Player card: Bishop
+?Bishop
+Protect Napoli
+Score {
+RealCoders=0
+TestBot=0
 }
 
 Player RealCoders
@@ -227,62 +713,42 @@ Player start play: RealCoders
 Play 1
 Player card: 1
 Score {
-RealCoders=22
-TestBot=32
+RealCoders=1
+TestBot=0
 }
 
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [CARD_4, CARD_4, CARD_10, CARD_10]
-usedcards[CARD_6, BOHATERKA, KUKLA, CARD_5, KUKLA, DOBOSZ]
+cards: [CARD_4, KURTYZANA, ZIMA, BISKUP, CARD_2, KAPITULACJA, KURTYZANA, KUKLA, DOBOSZ, CARD_4, WIOSNA, BISKUP]
+usedcards[]
 Play 4
 Player card: 4
 Score {
-RealCoders=22
-TestBot=40
+RealCoders=1
+TestBot=4
 }
 
 Player RealCoders
 Player start play: RealCoders
-Play 10
-Player card: 10
+Play Scarecrow
+Player card: Scarecrow
+Retrieve 1
 Score {
-RealCoders=42
-TestBot=40
+RealCoders=0
+TestBot=4
 }
 
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [CARD_4, CARD_10, CARD_10]
-usedcards[CARD_4, CARD_6, BOHATERKA, KUKLA, CARD_5, KUKLA, DOBOSZ]
-Play 10
-Player card: 10
+cards: [KURTYZANA, ZIMA, BISKUP, CARD_2, KAPITULACJA, KURTYZANA, KUKLA, DOBOSZ, CARD_4, WIOSNA, BISKUP]
+usedcards[CARD_4]
+Play Courtesan
+Player card: Courtesan
 Score {
-RealCoders=42
-TestBot=60
-}
-
-Player RealCoders
-Player start play: RealCoders
-Play Spring
-Player card: Spring
-Score {
-RealCoders=45
-TestBot=63
-}
-
-Player TestBot
-Player start play: TestBot
-?Move
-cards: [CARD_4, CARD_10]
-usedcards[CARD_10, CARD_4, CARD_6, BOHATERKA, KUKLA, CARD_5, KUKLA, DOBOSZ]
-Play 4
-Player card: 4
-Score {
-RealCoders=45
-TestBot=71
+RealCoders=0
+TestBot=5
 }
 
 Player RealCoders
@@ -290,70 +756,897 @@ Player start play: RealCoders
 Play Winter
 Player card: Winter
 Score {
-RealCoders=10
-TestBot=20
+RealCoders=0
+TestBot=2
 }
 
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [CARD_10]
-usedcards[CARD_4, CARD_10, CARD_4, CARD_6, BOHATERKA, KUKLA, CARD_5, KUKLA, DOBOSZ]
-Play 10
-Player card: 10
+cards: [ZIMA, BISKUP, CARD_2, KAPITULACJA, KURTYZANA, KUKLA, DOBOSZ, CARD_4, WIOSNA, BISKUP]
+usedcards[KURTYZANA, CARD_4]
+Play Spring
+Player card: Spring
 Score {
-RealCoders=10
-TestBot=22
+RealCoders=0
+TestBot=8
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 5
+Player card: 5
+Score {
+RealCoders=8
+TestBot=5
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [ZIMA, BISKUP, CARD_2, KAPITULACJA, KURTYZANA, KUKLA, DOBOSZ, CARD_4, BISKUP]
+usedcards[WIOSNA, KURTYZANA, CARD_4]
+Play 2
+Player card: 2
+Score {
+RealCoders=8
+TestBot=7
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Key
+Player card: Key
+Score {
+RealCoders=8
+TestBot=7
+}
+
+BattleEnd RealCoders
+BattleStart 5
+Order [
+TestBot
+RealCoders
+]
+
+?Condottiere
+CurrentZone Torino
+Zone to remove: Torino
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [ZIMA, BISKUP, KAPITULACJA, KURTYZANA, KUKLA, DOBOSZ, CARD_4, BISKUP]
+usedcards[]
+Play Bishop
+Player card: Bishop
+?Bishop
+Protect Milano
+Score {
+RealCoders=0
+TestBot=0
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 1
+Player card: 1
+Score {
+RealCoders=1
+TestBot=0
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [ZIMA, KAPITULACJA, KURTYZANA, KUKLA, DOBOSZ, CARD_4, BISKUP]
+usedcards[]
+Play 4
+Player card: 4
+Score {
+RealCoders=1
+TestBot=4
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 2
+Player card: 2
+Score {
+RealCoders=3
+TestBot=4
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [ZIMA, KAPITULACJA, KURTYZANA, KUKLA, DOBOSZ, BISKUP]
+usedcards[CARD_4]
+Play Scarecrow
+Player card: Scarecrow
+?Retrieve
+Retrieve 4
+Score {
+RealCoders=3
+TestBot=0
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 4
+Player card: 4
+Score {
+RealCoders=7
+TestBot=0
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [ZIMA, KAPITULACJA, KURTYZANA, DOBOSZ, BISKUP, CARD_4]
+usedcards[KUKLA]
+Play Drummer
+Player card: Drummer
+Score {
+RealCoders=7
+TestBot=0
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Scarecrow
+Player card: Scarecrow
+Retrieve 1
+Score {
+RealCoders=6
+TestBot=0
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [ZIMA, KAPITULACJA, KURTYZANA, BISKUP, CARD_4]
+usedcards[DOBOSZ, KUKLA]
+Play Key
+Player card: Key
+Score {
+RealCoders=6
+TestBot=0
+}
+
+BattleEnd RealCoders
+BattleStart 6
+Order [
+RealCoders
+TestBot
+]
+
+CurrentZone Napoli
+Zone to remove: Napoli
+Player RealCoders
+Player start play: RealCoders
+Play 1
+Player card: 1
+Score {
+RealCoders=1
+TestBot=0
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [ZIMA, KURTYZANA, BISKUP, CARD_4]
+usedcards[]
+Play Courtesan
+Player card: Courtesan
+Score {
+RealCoders=1
+TestBot=1
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Heroine
+Player card: Heroine
+Score {
+RealCoders=11
+TestBot=1
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [ZIMA, BISKUP, CARD_4]
+usedcards[KURTYZANA]
+Play 4
+Player card: 4
+Score {
+RealCoders=11
+TestBot=5
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 3
+Player card: 3
+Score {
+RealCoders=14
+TestBot=5
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [ZIMA, BISKUP]
+usedcards[CARD_4, KURTYZANA]
+Play Winter
+Player card: Winter
+Score {
+RealCoders=12
+TestBot=2
 }
 
 Player RealCoders
 Player start play: RealCoders
 Pass
 Score {
-RealCoders=10
-TestBot=22
+RealCoders=12
+TestBot=2
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [BISKUP]
+usedcards[ZIMA, CARD_4, KURTYZANA]
+Play Bishop
+Player card: Bishop
+?Bishop
+Protect Roma
+Score {
+RealCoders=12
+TestBot=1
 }
 
 Player TestBot
 Player start play: TestBot
 ?Move
 cards: []
-usedcards[CARD_10, CARD_4, CARD_10, CARD_4, CARD_6, BOHATERKA, KUKLA, CARD_5, KUKLA, DOBOSZ]
+usedcards[BISKUP, ZIMA]
 Pass
-BattleEnd TestBot
+BattleEnd RealCoders
 RoundEnd
-RoundStart 2
+RoundStart 4
 Hand [
-1
+3
+Courtesan
+Scarecrow
+3
+10
 Drummer
-Courtesan
-Courtesan
-1
 1
 Scarecrow
-Bishop
-Bishop
+5
+Drummer
 3
-4
+Heroine
+6
 ]
 
 MSG: Hand [
-1
+3
+Courtesan
+Scarecrow
+3
+10
 Drummer
-Courtesan
-Courtesan
-1
 1
 Scarecrow
-Bishop
-Bishop
+5
+Drummer
 3
-4
+Heroine
+6
 ]
  END
 
-PlayerName: RealCoders, cards: [CARD_1, DOBOSZ, KURTYZANA, KURTYZANA, CARD_1, CARD_1, KUKLA, BISKUP, BISKUP, CARD_3, CARD_4]
-BattleStart 2
+PlayerName: RealCoders, cards: [CARD_3, KURTYZANA, KUKLA, CARD_3, CARD_10, DOBOSZ, CARD_1, KUKLA, CARD_5, DOBOSZ, CARD_3, BOHATERKA, CARD_6]
+BattleStart 7
+Order [
+TestBot
+RealCoders
+]
+
+?Condottiere
+CurrentZone Ferrara
+Zone to remove: Ferrara
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_3, KURTYZANA, KUKLA, CARD_3, CARD_10, DOBOSZ, CARD_1, KUKLA, CARD_5, DOBOSZ, CARD_3, BOHATERKA, CARD_6]
+usedcards[]
+Play 3
+Player card: 3
+Score {
+RealCoders=0
+TestBot=3
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Courtesan
+Player card: Courtesan
+Score {
+RealCoders=1
+TestBot=3
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KURTYZANA, KUKLA, CARD_3, CARD_10, DOBOSZ, CARD_1, KUKLA, CARD_5, DOBOSZ, CARD_3, BOHATERKA, CARD_6]
+usedcards[CARD_3]
+Play 6
+Player card: 6
+Score {
+RealCoders=1
+TestBot=9
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 2
+Player card: 2
+Score {
+RealCoders=3
+TestBot=9
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KURTYZANA, KUKLA, CARD_3, CARD_10, DOBOSZ, CARD_1, KUKLA, CARD_5, DOBOSZ, CARD_3, BOHATERKA]
+usedcards[CARD_6, CARD_3]
+Play Courtesan
+Player card: Courtesan
+Score {
+RealCoders=3
+TestBot=10
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Courtesan
+Player card: Courtesan
+Score {
+RealCoders=4
+TestBot=10
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, CARD_3, CARD_10, DOBOSZ, CARD_1, KUKLA, CARD_5, DOBOSZ, CARD_3, BOHATERKA]
+usedcards[KURTYZANA, CARD_6, CARD_3]
+Play 5
+Player card: 5
+Score {
+RealCoders=4
+TestBot=15
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 1
+Player card: 1
+Score {
+RealCoders=5
+TestBot=15
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, CARD_3, CARD_10, DOBOSZ, CARD_1, KUKLA, DOBOSZ, CARD_3, BOHATERKA]
+usedcards[CARD_5, KURTYZANA, CARD_6, CARD_3]
+Play Heroine
+Player card: Heroine
+Score {
+RealCoders=5
+TestBot=25
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 10
+Player card: 10
+Score {
+RealCoders=15
+TestBot=25
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, CARD_3, CARD_10, DOBOSZ, CARD_1, KUKLA, DOBOSZ, CARD_3]
+usedcards[BOHATERKA, CARD_5, KURTYZANA, CARD_6, CARD_3]
+Play Scarecrow
+Player card: Scarecrow
+?Retrieve
+Retrieve 3
+Score {
+RealCoders=15
+TestBot=22
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 1
+Player card: 1
+Score {
+RealCoders=16
+TestBot=22
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_3, CARD_10, DOBOSZ, CARD_1, KUKLA, DOBOSZ, CARD_3, CARD_3]
+usedcards[KUKLA, BOHATERKA, CARD_5, KURTYZANA, CARD_6]
+Play Drummer
+Player card: Drummer
+Score {
+RealCoders=16
+TestBot=33
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 6
+Player card: 6
+Score {
+RealCoders=22
+TestBot=33
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_3, CARD_10, CARD_1, KUKLA, DOBOSZ, CARD_3, CARD_3]
+usedcards[DOBOSZ, KUKLA, BOHATERKA, CARD_5, KURTYZANA, CARD_6]
+Play 1
+Player card: 1
+Score {
+RealCoders=22
+TestBot=35
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 3
+Player card: 3
+Score {
+RealCoders=25
+TestBot=35
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_3, CARD_10, KUKLA, DOBOSZ, CARD_3, CARD_3]
+usedcards[CARD_1, DOBOSZ, KUKLA, BOHATERKA, CARD_5, KURTYZANA, CARD_6]
+Play 10
+Player card: 10
+Score {
+RealCoders=25
+TestBot=55
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Bishop
+Player card: Bishop
+Protect Bologna
+Score {
+RealCoders=15
+TestBot=35
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_3, KUKLA, DOBOSZ, CARD_3, CARD_3]
+usedcards[CARD_10, CARD_1, DOBOSZ, KUKLA, BOHATERKA, CARD_5, KURTYZANA, CARD_6]
+Play 3
+Player card: 3
+Score {
+RealCoders=15
+TestBot=41
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 10
+Player card: 10
+Score {
+RealCoders=25
+TestBot=41
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, DOBOSZ, CARD_3, CARD_3]
+usedcards[CARD_3, CARD_10, CARD_1, DOBOSZ, KUKLA, BOHATERKA, CARD_5, KURTYZANA, CARD_6]
+Play 3
+Player card: 3
+Score {
+RealCoders=25
+TestBot=47
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Drummer
+Player card: Drummer
+Score {
+RealCoders=48
+TestBot=47
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, DOBOSZ, CARD_3]
+usedcards[CARD_3, CARD_3, CARD_10, CARD_1, DOBOSZ, KUKLA, BOHATERKA, CARD_5, KURTYZANA, CARD_6]
+Play 3
+Player card: 3
+Score {
+RealCoders=48
+TestBot=53
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Scarecrow
+Player card: Scarecrow
+Retrieve 1
+Score {
+RealCoders=46
+TestBot=53
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, DOBOSZ]
+usedcards[CARD_3, CARD_3, CARD_3, CARD_10, CARD_1, DOBOSZ, KUKLA, BOHATERKA, CARD_5, KURTYZANA, CARD_6]
+Play Drummer
+Player card: Drummer
+Score {
+RealCoders=46
+TestBot=53
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Courtesan
+Player card: Courtesan
+Score {
+RealCoders=47
+TestBot=53
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA]
+usedcards[DOBOSZ, CARD_3, CARD_3, CARD_3, CARD_10, CARD_1, DOBOSZ, KUKLA, BOHATERKA, CARD_5, KURTYZANA, CARD_6]
+Play Scarecrow
+Player card: Scarecrow
+?Retrieve
+Retrieve 1
+Score {
+RealCoders=47
+TestBot=51
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 1
+Player card: 1
+Score {
+RealCoders=49
+TestBot=51
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_1]
+usedcards[KUKLA, DOBOSZ, CARD_3, CARD_3, CARD_3, CARD_10, DOBOSZ, KUKLA, BOHATERKA, CARD_5, KURTYZANA, CARD_6]
+Play 1
+Player card: 1
+Score {
+RealCoders=49
+TestBot=53
+}
+
+Player RealCoders
+Player start play: RealCoders
+Pass
+Score {
+RealCoders=49
+TestBot=53
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: []
+usedcards[CARD_1, KUKLA, DOBOSZ, CARD_3, CARD_3, CARD_3, CARD_10, DOBOSZ, KUKLA, BOHATERKA, CARD_5, KURTYZANA, CARD_6]
+Pass
+BattleEnd TestBot
+RoundEnd
+RoundStart 5
+Hand [
+6
+Scarecrow
+Courtesan
+5
+1
+1
+Spring
+2
+1
+Key
+Scarecrow
+5
+10
+10
+]
+
+MSG: Hand [
+6
+Scarecrow
+Courtesan
+5
+1
+1
+Spring
+2
+1
+Key
+Scarecrow
+5
+10
+10
+]
+ END
+
+PlayerName: RealCoders, cards: [CARD_6, KUKLA, KURTYZANA, CARD_5, CARD_1, CARD_1, WIOSNA, CARD_2, CARD_1, KAPITULACJA, KUKLA, CARD_5, CARD_10, CARD_10]
+BattleStart 8
+Order [
+RealCoders
+TestBot
+]
+
+CurrentZone Siena
+Zone to remove: Siena
+Player RealCoders
+Player start play: RealCoders
+Play Courtesan
+Player card: Courtesan
+Score {
+RealCoders=1
+TestBot=0
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_6, KUKLA, KURTYZANA, CARD_5, CARD_1, CARD_1, WIOSNA, CARD_2, CARD_1, KAPITULACJA, KUKLA, CARD_5, CARD_10, CARD_10]
+usedcards[]
+Play Courtesan
+Player card: Courtesan
+Score {
+RealCoders=1
+TestBot=1
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 5
+Player card: 5
+Score {
+RealCoders=6
+TestBot=1
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_6, KUKLA, CARD_5, CARD_1, CARD_1, WIOSNA, CARD_2, CARD_1, KAPITULACJA, KUKLA, CARD_5, CARD_10, CARD_10]
+usedcards[KURTYZANA]
+Play 10
+Player card: 10
+Score {
+RealCoders=6
+TestBot=11
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 1
+Player card: 1
+Score {
+RealCoders=7
+TestBot=11
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_6, KUKLA, CARD_5, CARD_1, CARD_1, WIOSNA, CARD_2, CARD_1, KAPITULACJA, KUKLA, CARD_5, CARD_10]
+usedcards[CARD_10, KURTYZANA]
+Play 1
+Player card: 1
+Score {
+RealCoders=7
+TestBot=12
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 5
+Player card: 5
+Score {
+RealCoders=12
+TestBot=12
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_6, KUKLA, CARD_5, CARD_1, WIOSNA, CARD_2, CARD_1, KAPITULACJA, KUKLA, CARD_5, CARD_10]
+usedcards[CARD_1, CARD_10, KURTYZANA]
+Play 5
+Player card: 5
+Score {
+RealCoders=12
+TestBot=17
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Scarecrow
+Player card: Scarecrow
+Retrieve 5
+Score {
+RealCoders=7
+TestBot=17
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_6, KUKLA, CARD_1, WIOSNA, CARD_2, CARD_1, KAPITULACJA, KUKLA, CARD_5, CARD_10]
+usedcards[CARD_5, CARD_1, CARD_10, KURTYZANA]
+Play Spring
+Player card: Spring
+Score {
+RealCoders=7
+TestBot=20
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 2
+Player card: 2
+Score {
+RealCoders=9
+TestBot=20
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_6, KUKLA, CARD_1, CARD_2, CARD_1, KAPITULACJA, KUKLA, CARD_5, CARD_10]
+usedcards[WIOSNA, CARD_5, CARD_1, CARD_10, KURTYZANA]
+Play 6
+Player card: 6
+Score {
+RealCoders=9
+TestBot=26
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 10
+Player card: 10
+Score {
+RealCoders=22
+TestBot=26
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, CARD_1, CARD_2, CARD_1, KAPITULACJA, KUKLA, CARD_5, CARD_10]
+usedcards[CARD_6, WIOSNA, CARD_5, CARD_1, CARD_10, KURTYZANA]
+Play Scarecrow
+Player card: Scarecrow
+?Retrieve
+Retrieve 10
+Score {
+RealCoders=22
+TestBot=13
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 6
+Player card: 6
+Score {
+RealCoders=28
+TestBot=13
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_1, CARD_2, CARD_1, KAPITULACJA, KUKLA, CARD_5, CARD_10, CARD_10]
+usedcards[KUKLA, CARD_6, WIOSNA, CARD_5, CARD_1, KURTYZANA]
+Play 1
+Player card: 1
+Score {
+RealCoders=28
+TestBot=14
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 5
+Player card: 5
+Score {
+RealCoders=33
+TestBot=14
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_2, CARD_1, KAPITULACJA, KUKLA, CARD_5, CARD_10, CARD_10]
+usedcards[CARD_1, KUKLA, CARD_6, WIOSNA, CARD_5, CARD_1, KURTYZANA]
+Play 10
+Player card: 10
+Score {
+RealCoders=33
+TestBot=27
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 10
+Player card: 10
+Score {
+RealCoders=46
+TestBot=27
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [CARD_2, CARD_1, KAPITULACJA, KUKLA, CARD_5, CARD_10]
+usedcards[CARD_10, CARD_1, KUKLA, CARD_6, WIOSNA, CARD_5, CARD_1, KURTYZANA]
+Play Key
+Player card: Key
+Score {
+RealCoders=46
+TestBot=27
+}
+
+BattleEnd RealCoders
+BattleStart 9
 Order [
 TestBot
 RealCoders
@@ -365,57 +1658,13 @@ Zone to remove: Ancona
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [CARD_1, DOBOSZ, KURTYZANA, KURTYZANA, CARD_1, CARD_1, KUKLA, BISKUP, BISKUP, CARD_3, CARD_4]
-usedcards[]
-Play Courtesan
-Player card: Courtesan
-Score {
-RealCoders=0
-TestBot=1
-}
-
-Player RealCoders
-Player start play: RealCoders
-Play 2
-Player card: 2
-Score {
-RealCoders=2
-TestBot=1
-}
-
-Player TestBot
-Player start play: TestBot
-?Move
-cards: [CARD_1, DOBOSZ, KURTYZANA, CARD_1, CARD_1, KUKLA, BISKUP, BISKUP, CARD_3, CARD_4]
-usedcards[KURTYZANA]
-Play Bishop
-Player card: Bishop
-?Bishop
-Protect Firenze
-Score {
-RealCoders=0
-TestBot=1
-}
-
-Player RealCoders
-Player start play: RealCoders
-Play 2
-Player card: 2
-Score {
-RealCoders=2
-TestBot=1
-}
-
-Player TestBot
-Player start play: TestBot
-?Move
-cards: [CARD_1, DOBOSZ, KURTYZANA, CARD_1, CARD_1, KUKLA, BISKUP, CARD_3, CARD_4]
+cards: [CARD_2, CARD_1, KUKLA, CARD_5, CARD_10]
 usedcards[]
 Play 1
 Player card: 1
 Score {
-RealCoders=2
-TestBot=2
+RealCoders=0
+TestBot=1
 }
 
 Player RealCoders
@@ -423,43 +1672,43 @@ Player start play: RealCoders
 Play 10
 Player card: 10
 Score {
-RealCoders=12
-TestBot=2
+RealCoders=10
+TestBot=1
 }
 
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [DOBOSZ, KURTYZANA, CARD_1, CARD_1, KUKLA, BISKUP, CARD_3, CARD_4]
+cards: [CARD_2, KUKLA, CARD_5, CARD_10]
 usedcards[CARD_1]
 Play Scarecrow
 Player card: Scarecrow
 ?Retrieve
 Retrieve 1
 Score {
-RealCoders=12
-TestBot=1
+RealCoders=10
+TestBot=0
 }
 
 Player RealCoders
 Player start play: RealCoders
-Play 3
-Player card: 3
+Play Courtesan
+Player card: Courtesan
 Score {
-RealCoders=15
-TestBot=1
+RealCoders=11
+TestBot=0
 }
 
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [DOBOSZ, KURTYZANA, CARD_1, CARD_1, BISKUP, CARD_3, CARD_4, CARD_1]
+cards: [CARD_2, CARD_5, CARD_10, CARD_1]
 usedcards[KUKLA]
-Play 4
-Player card: 4
+Play 10
+Player card: 10
 Score {
-RealCoders=15
-TestBot=5
+RealCoders=11
+TestBot=10
 }
 
 Player RealCoders
@@ -467,64 +1716,147 @@ Player start play: RealCoders
 Play 4
 Player card: 4
 Score {
-RealCoders=19
-TestBot=5
+RealCoders=15
+TestBot=10
 }
 
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [DOBOSZ, KURTYZANA, CARD_1, CARD_1, BISKUP, CARD_3, CARD_1]
-usedcards[CARD_4, KUKLA]
-Play Bishop
-Player card: Bishop
-?Bishop
-Protect Spoleto
+cards: [CARD_2, CARD_5, CARD_1]
+usedcards[CARD_10, KUKLA]
+Play 2
+Player card: 2
 Score {
-RealCoders=9
-TestBot=5
+RealCoders=15
+TestBot=12
 }
 
 Player RealCoders
 Player start play: RealCoders
-Play 6
-Player card: 6
+Play Scarecrow
+Player card: Scarecrow
+Retrieve 10
 Score {
-RealCoders=15
-TestBot=5
+RealCoders=5
+TestBot=12
 }
 
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [DOBOSZ, KURTYZANA, CARD_1, CARD_1, CARD_3, CARD_1]
-usedcards[]
-Play 3
-Player card: 3
+cards: [CARD_5, CARD_1]
+usedcards[CARD_2, CARD_10, KUKLA]
+Play 5
+Player card: 5
 Score {
-RealCoders=15
-TestBot=8
+RealCoders=5
+TestBot=17
 }
 
 Player RealCoders
 Player start play: RealCoders
-Play Winter
-Player card: Winter
+Play 10
+Player card: 10
 Score {
-RealCoders=4
-TestBot=3
+RealCoders=15
+TestBot=17
 }
 
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [DOBOSZ, KURTYZANA, CARD_1, CARD_1, CARD_1]
-usedcards[CARD_3]
+cards: [CARD_1]
+usedcards[CARD_5, CARD_2, CARD_10, KUKLA]
 Play 1
 Player card: 1
 Score {
+RealCoders=15
+TestBot=18
+}
+
+Player RealCoders
+Player start play: RealCoders
+Pass
+Score {
+RealCoders=15
+TestBot=18
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: []
+usedcards[CARD_1, CARD_5, CARD_2, CARD_10, KUKLA]
+Pass
+BattleEnd TestBot
+RoundEnd
+RoundStart 6
+Hand [
+Bishop
+Scarecrow
+5
+Courtesan
+Heroine
+Key
+Scarecrow
+Spring
+4
+5
+5
+Key
+Spring
+Winter
+Bishop
+]
+
+MSG: Hand [
+Bishop
+Scarecrow
+5
+Courtesan
+Heroine
+Key
+Scarecrow
+Spring
+4
+5
+5
+Key
+Spring
+Winter
+Bishop
+]
+ END
+
+PlayerName: RealCoders, cards: [BISKUP, KUKLA, CARD_5, KURTYZANA, BOHATERKA, KAPITULACJA, KUKLA, WIOSNA, CARD_4, CARD_5, CARD_5, KAPITULACJA, WIOSNA, ZIMA, BISKUP]
+BattleStart 10
+Order [
+RealCoders
+TestBot
+]
+
+CurrentZone Roma
+Zone to remove: Roma
+Player RealCoders
+Player start play: RealCoders
+Play 4
+Player card: 4
+Score {
 RealCoders=4
-TestBot=4
+TestBot=0
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [BISKUP, KUKLA, CARD_5, KURTYZANA, BOHATERKA, KAPITULACJA, KUKLA, WIOSNA, CARD_4, CARD_5, CARD_5, KAPITULACJA, WIOSNA, ZIMA, BISKUP]
+usedcards[]
+Play Spring
+Player card: Spring
+Score {
+RealCoders=7
+TestBot=0
 }
 
 Player RealCoders
@@ -532,12 +1864,123 @@ Player start play: RealCoders
 Play 3
 Player card: 3
 Score {
-RealCoders=5
-TestBot=4
+RealCoders=10
+TestBot=0
 }
 
 Player TestBot
 Player start play: TestBot
 ?Move
-cards: [DOBOSZ, KURTYZANA, CARD_1, CARD_1]
-usedcards[CARD_1, CARD_3]
+cards: [BISKUP, KUKLA, CARD_5, KURTYZANA, BOHATERKA, KAPITULACJA, KUKLA, CARD_4, CARD_5, CARD_5, KAPITULACJA, WIOSNA, ZIMA, BISKUP]
+usedcards[WIOSNA]
+Play Bishop
+Player card: Bishop
+?Bishop
+Protect Bologna
+Score {
+RealCoders=6
+TestBot=0
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Scarecrow
+Player card: Scarecrow
+Retrieve 3
+Score {
+RealCoders=0
+TestBot=0
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, CARD_5, KURTYZANA, BOHATERKA, KAPITULACJA, KUKLA, CARD_4, CARD_5, CARD_5, KAPITULACJA, WIOSNA, ZIMA, BISKUP]
+usedcards[]
+Play Heroine
+Player card: Heroine
+Score {
+RealCoders=0
+TestBot=10
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 4
+Player card: 4
+Score {
+RealCoders=7
+TestBot=10
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, CARD_5, KURTYZANA, KAPITULACJA, KUKLA, CARD_4, CARD_5, CARD_5, KAPITULACJA, WIOSNA, ZIMA, BISKUP]
+usedcards[BOHATERKA]
+Play Spring
+Player card: Spring
+Score {
+RealCoders=7
+TestBot=10
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Scarecrow
+Player card: Scarecrow
+Retrieve 4
+Score {
+RealCoders=0
+TestBot=10
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, CARD_5, KURTYZANA, KAPITULACJA, KUKLA, CARD_4, CARD_5, CARD_5, KAPITULACJA, ZIMA, BISKUP]
+usedcards[WIOSNA, BOHATERKA]
+Play Courtesan
+Player card: Courtesan
+Score {
+RealCoders=0
+TestBot=11
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play Courtesan
+Player card: Courtesan
+Score {
+RealCoders=1
+TestBot=11
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, CARD_5, KAPITULACJA, KUKLA, CARD_4, CARD_5, CARD_5, KAPITULACJA, ZIMA, BISKUP]
+usedcards[KURTYZANA, WIOSNA, BOHATERKA]
+Play Bishop
+Player card: Bishop
+?Bishop
+Protect Firenze
+Score {
+RealCoders=1
+TestBot=11
+}
+
+Player RealCoders
+Player start play: RealCoders
+Play 4
+Player card: 4
+Score {
+RealCoders=8
+TestBot=11
+}
+
+Player TestBot
+Player start play: TestBot
+?Move
+cards: [KUKLA, CARD_5, KAPITULACJA, KUKLA, CARD_4, CARD_5, CARD_5, KAPITULACJA, ZIMA]
+usedcards[BISKUP, WIOSNA]
