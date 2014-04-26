@@ -1,19 +1,22 @@
 package com.realcoders.bot;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class Player {
 
-	private final LinkedList<CardType> cards;
-	private LinkedList<CardType> used;
-	private final Game game;
-
-	Player(LinkedList<CardType> cards, Game game) {
+	private LinkedList<CardType> cards;
+    private LinkedList<CardType> used = new LinkedList<>();
+	//private final Game game;
+    private int currentScore=0;
+	public Player(LinkedList<CardType> cards) {
 		this.cards = cards;
-		this.game = game;
+		//this.game = game;
 	}
 
-	void playCard(CardType card) {
+
+
+    public void playCard(CardType card) {
 		if (cards.contains(card)) {
 			cards.removeFirstOccurrence(card);
 			used.push(card);
@@ -22,4 +25,19 @@ public class Player {
 		}
 	}
 
+    public LinkedList<CardType> getUsed() {
+        return used;
+    }
+
+    public LinkedList<CardType> getCards() {
+        return cards;
+    }
+
+    public int getCurrentScore() {
+        return currentScore;
+    }
+
+    public void setCurrentScore(int currentScore) {
+        this.currentScore = currentScore;
+    }
 }

@@ -4,8 +4,11 @@ public class Game {
 
 	private final Player[] players;
 
-	Game(Player[] players) {
+	public Game(Player[] players) {
 		this.players = players;
 	}
 
+    public Player[] getPlayers() {
+        return players;
+    }
 }
