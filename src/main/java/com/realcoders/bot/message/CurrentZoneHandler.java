@@ -8,6 +8,6 @@ import com.realcoders.bot.Game;
 public class CurrentZoneHandler extends MessageHandler {
     @Override
     public void handle(String message, Game game) {
-
+        System.out.println("MSG CURR ZONE: " + message);
     }
 }
