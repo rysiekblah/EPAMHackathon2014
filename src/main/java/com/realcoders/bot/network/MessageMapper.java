@@ -1,6 +1,8 @@
 package com.realcoders.bot.network;
 
 import com.google.common.collect.Maps;
+import com.realcoders.bot.CardType;
+import com.realcoders.bot.Region;
 import com.realcoders.bot.message.*;
 
 import java.util.Map;
@@ -32,10 +34,34 @@ public class MessageMapper {
     public static final String RETRIEVE = "Retrieve";
     public static final String SCORE = "Score";
 
+
     public static final String CONDOTIERE = "?Condottiere";
     public static final String MOVE = "?Move";
     public static final String BISHOP = "?Bishop";
     public static final String Q_RETRIEVE = "?Retrieve";
+
+    public static Map<Region,String > regionMap = Maps.newHashMap();
+
+    static {
+
+        regionMap.put(Region.TORINO,"Torino");
+        regionMap.put(Region.MILANO,"Milano");
+        regionMap.put(Region.VENEZIA,"Venezia");
+        regionMap.put(Region.GENOVA, "Genova");
+        regionMap.put(Region.MANTOVA, "Mantova");
+        regionMap.put(Region.PARMA, "Parma");
+        regionMap.put(Region.MODENA, "Modena");
+        regionMap.put(Region.FERRARA, "Ferrara");
+        regionMap.put(Region.BOLOGNA, "Bologna");
+        regionMap.put(Region.LUCCA, "Lucca");
+        regionMap.put(Region.FIRENZE, "Firenze");
+        regionMap.put(Region.SIENA, "Siena");
+        regionMap.put(Region.SPOLETO, "Spoleto");
+        regionMap.put(Region.URBINO, "Urbino");
+        regionMap.put(Region.ANCONA, "Ancona");
+        regionMap.put(Region.ROMA, "Roma");
+        regionMap.put(Region.NAPOLI, "Napoli");
+    }
 
 
     static {
