@@ -27,6 +27,9 @@ public class Client {
         socket = new Socket(host, port);
         dataToArena = new DataOutputStream(socket.getOutputStream());
         dataFromArena = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+        System.out.print(
+                "Connection status: " + socket.getInetAddress().toString() +
+                        ", connected: " + socket.isConnected());
     }
 
     public void disconnect() throws IOException {
