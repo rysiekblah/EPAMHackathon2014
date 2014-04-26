@@ -2,6 +2,7 @@ package com.realcoders.bot;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class Game {
 
@@ -25,7 +26,26 @@ public class Game {
         return currentPlayer;
     }
     public void currentPlayerPlay(CardType card){
+
         currentPlayer.getUsed().add(card);
+        if(card.equals(CardType.BISKUP))
+            bishopInGame();
+    }
+
+    private void bishopInGame() {
+        int strongest=0;
+        for (Player player : players)
+            for (CardType card : player.getUsed())
+                if (card.getPower()>strongest)
+                    strongest=card.getPower();
+        for (Player player : players) {
+            Iterator<CardType> itr = player.getUsed().iterator();
+            while(itr.hasNext()) {
+                CardType card=itr.next();
+                if (strongest == card.getPower())
+                    itr.remove();
+            }
+        }
     }
 
     public void setCurrentPlayer(Player currentPlayer) {
