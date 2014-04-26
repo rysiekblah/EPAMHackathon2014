@@ -28,6 +28,10 @@ public class Game {
         return ourPlayer;
     }
 
+    public void removeRegion(Region region){
+        availableRegions.remove(region);
+    }
+
     public void setOurPlayer(Player ourPlayer) {
         this.ourPlayer = ourPlayer;
     }
