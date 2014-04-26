@@ -1,5 +1,6 @@
 package com.realcoders.bot.message;
 
+import com.realcoders.bot.Game;
 import com.realcoders.bot.network.MessageMapper;
 
 /**

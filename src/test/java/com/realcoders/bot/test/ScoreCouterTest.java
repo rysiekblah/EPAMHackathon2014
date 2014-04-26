@@ -16,7 +16,7 @@ public class ScoreCouterTest {
         for(CardType card : cards){
             cardList.add(card);
         }
-        Player player=new Player(cardList);
+        Player player=new Player(cardList, null);
         for(CardType card : cards){
             player.playCard(card);
         }
@@ -27,7 +27,7 @@ public class ScoreCouterTest {
         for (CardType card : cards) {
             cardList.add(card);
         }
-        Player player = new Player(cardList);
+        Player player = new Player(cardList, null);
         return player;
     }
     @Test
