@@ -35,12 +35,19 @@ public class Game {
     public void setPlayers(Player[] players) {
         this.players = players;
     }
-
+    public boolean playerUseAnyMercenary(){
+        for(CardType cardType: ourPlayer.getUsed())
+            if(cardType.isMercenary())
+                return true;
+        return false;
+    }
     public CardType move(){
+        if(ourPlayer.getCards().size()==0)
+            return null;
         CardType card=null;
         do {
            card = ourPlayer.getCards().get((int) (Math.random() * ourPlayer.getCards().size()));
-        }while(CardType.KUKLA.equals(card) && ourPlayer.getUsed().size()==0);
+        }while(CardType.KUKLA.equals(card) && (ourPlayer.getUsed().size()==0 || !playerUseAnyMercenary()));
         ourPlayer.playCard(card);
             //ourPlayer.getCards().remove(card);
         return card;
@@ -48,7 +55,11 @@ public class Game {
     }
 
     public CardType retrieve(){
-        CardType card = ourPlayer.getUsed().get((int) (Math.random()*ourPlayer.getUsed().size()));
+
+        CardType card =null;
+        do {
+            card = ourPlayer.getUsed().get((int) (Math.random() * ourPlayer.getUsed().size()));
+        } while(!card.isMercenary());
         ourPlayer.getCards().add(card);
         return card;
     }

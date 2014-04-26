@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.realcoders.bot.test.CanaryTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+=======
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+>>>>>>> f6318287c9b606feb34c5f5650541094f0fd9db4
