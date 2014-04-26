@@ -59,4 +59,12 @@ public class Game {
         return region;
 
     }
+
+    public Region getProtectedRegion() {
+        return protectedRegion;
+    }
+
+    public void setProtectedRegion(Region protectedRegion) {
+        this.protectedRegion = protectedRegion;
+    }
 }
