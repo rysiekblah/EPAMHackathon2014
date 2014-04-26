@@ -1,10 +1,23 @@
 package com.realcoders.bot.message;
 
+import java.util.Map;
+
 /**
  * Created by tomek on 4/26/14.
  */
-public interface MessageHandler {
+public abstract class MessageHandler {
 
-    void handle(String message);
+    public abstract void handle(String message);
+
+    public String[] parseList(String message) {
+        String players = message.substring(message.indexOf('[') + 2, message.indexOf(']'));
+        return players.split("\n");
+    }
+
+    public Map<String, String> parseMap(String message) {
+        return null;
+    }
+
+
 
 }
