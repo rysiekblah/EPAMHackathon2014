@@ -1,9 +1,7 @@
 package com.realcoders.bot.network;
 
 import com.google.common.collect.Maps;
-import com.realcoders.bot.message.GameEndHandler;
-import com.realcoders.bot.message.GameStartHandler;
-import com.realcoders.bot.message.MessageHandler;
+import com.realcoders.bot.message.*;
 
 import java.util.Map;
 
@@ -40,6 +38,10 @@ public class MessageMapper {
         msgMap = Maps.newHashMap();
         msgMap.put(GAME_START, new GameStartHandler());
         msgMap.put(GAME_END, new GameEndHandler());
+        msgMap.put(ROUND_START, new RoundStartHandler());
+        msgMap.put(ROUND_END, new RoundEndHandler());
+        msgMap.put(BATTLE_START, new BattleStartHanlder());
+        msgMap.put(BATTLE_END, new BattleEndHander());
 
     }
 
