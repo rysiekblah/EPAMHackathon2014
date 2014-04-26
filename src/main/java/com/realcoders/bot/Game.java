@@ -86,9 +86,12 @@ public class Game {
         CardType card=null;
         do {
            card = ourPlayer.getCards().get((int) (Math.random() * ourPlayer.getCards().size()));
-        }while(CardType.KUKLA.equals(card) && (ourPlayer.getUsed().size()==0 || !playerUseAnyMercenary()));
+        }while(CardType.KUKLA.equals(card) &&
+                ((ourPlayer.getUsed().size()==0 || !playerUseAnyMercenary()) && ourPlayer.getCards().size()>1));
         ourPlayer.playCard(card);
             //ourPlayer.getCards().remove(card);
+        if(CardType.BISKUP.equals(card))
+            bishopInGame();
         return card;
 
     }
@@ -99,6 +102,7 @@ public class Game {
         do {
             card = ourPlayer.getUsed().get((int) (Math.random() * ourPlayer.getUsed().size()));
         } while(!card.isMercenary());
+        ourPlayer.getUsed().remove(card);
         ourPlayer.getCards().add(card);
         return card;
     }
