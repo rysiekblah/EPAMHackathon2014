@@ -8,6 +8,6 @@ import com.realcoders.bot.Game;
 public class BattleEndHander extends MessageHandler {
     @Override
     public void handle(String message, Game game) {
-
+        game.getOurPlayer().clearUsed();
     }
 }
