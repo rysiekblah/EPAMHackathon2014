@@ -77,7 +77,7 @@ public class MessageMapper {
         msgMap.put(HAND, new HandHandler());
         msgMap.put(ORDER, new OrderHandler());
         msgMap.put(PLAYER, new DummyHandler());
-        msgMap.put(CURRENT_ZONE, new DummyHandler());
+        msgMap.put(CURRENT_ZONE, new CurrentZoneHandler());
         msgMap.put(PASS, new DummyHandler());
         msgMap.put(PLAY, new DummyHandler());
         msgMap.put(PROTECT, new DummyHandler());
