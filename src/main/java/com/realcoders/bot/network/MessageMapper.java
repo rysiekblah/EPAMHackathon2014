@@ -12,6 +12,8 @@ import java.util.Map;
  */
 public class MessageMapper {
 
+    public static final String BOT_ALIAS = "RealCoders";
+
     private static Map<String, MessageHandler> msgMap;
     public static final String GAME_START = "GameStart";
     public static final String GAME_END = "GameEnd";
