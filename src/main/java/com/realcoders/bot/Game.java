@@ -2,21 +2,19 @@ package com.realcoders.bot;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
 
 public class Game {
 
 	private Player[] players;
-    private Player ourPlayer;
-    private ArrayList<Region> availableRegions= new ArrayList<Region>(Arrays.asList(Region.values()));
+	private Player ourPlayer;
+	private final ArrayList<Region> availableRegions = new ArrayList<Region>(
+			Arrays.asList(Region.values()));
 
+	private Region protectedRegion = null;
 
-    private Region protectedRegion =null;
+	public Game() {
 
-    public Game() {
-
-    }
+	}
 
 	public Game(Player[] players) {
 		this.players = players;
