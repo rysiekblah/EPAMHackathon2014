@@ -22,12 +22,12 @@ public class Player {
         }
     }
 	public void playCard(CardType card) {
-		if (cards.contains(card)) {
+		//if (cards.contains(card)) {
 			cards.removeFirstOccurrence(card);
 			used.push(card);
-		} else {
+		//} else {
 			//throw new RuntimeException();
-		}
+		//}
 	}
 
 	public void addRegion(RegionMap r) {

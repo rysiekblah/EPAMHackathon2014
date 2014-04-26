@@ -69,7 +69,7 @@ public class Strategy {
 		if (target != null) {
 			for (RegionMap t : target) {
 				if (t.getNeighboursOwnedBy(p).size() == 3
-						&& t.getFreeRegionNeighbours(g).size() > 0)
+						&& t.getFreeRegionNeighbours(game).size() > 0)
 					return 127;
 			}
 		} else {

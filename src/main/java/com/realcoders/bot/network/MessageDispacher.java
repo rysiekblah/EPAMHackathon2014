@@ -17,7 +17,9 @@ public class MessageDispacher implements MessageProvider {
             while (isRunning) {
                 try {
                     String msg = client.receiveMsg();
-                    messages.add(msg);
+                    System.out.println(msg);
+                    //if(msg!=null)
+                        messages.add(msg);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -32,6 +34,7 @@ public class MessageDispacher implements MessageProvider {
     public void start() {
         try {
             client.connect();
+            System.out.println("connected");
             client.sendMsg("AUTH password");
             isRunning = true;
             worker.start();

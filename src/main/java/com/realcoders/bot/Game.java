@@ -20,4 +20,10 @@ public class Game {
     public void setOurPlayer(Player ourPlayer) {
         this.ourPlayer = ourPlayer;
     }
+    public void chooseCard(){
+        CardType card = ourPlayer.getCards().get((int) (Math.random()*ourPlayer.getCards().size()));
+        ourPlayer.getCards().remove(card);
+
+    }
+
 }
