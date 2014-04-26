@@ -25,6 +25,14 @@ public class ScoreCouterTest {
         }
         return player;
     }
+    private static Player createPlayerWithCards(CardType ... cards) {
+        LinkedList<CardType> cardList = new LinkedList<>();
+        for (CardType card : cards) {
+            cardList.add(card);
+        }
+        Player player = new Player(cardList);
+        return player;
+    }
     @Test
     public void test1(){
         Player red=createPlayerWithUsedCards(CardType.CARD_1, CardType.CARD_10);
@@ -67,6 +75,33 @@ public class ScoreCouterTest {
         Game game = new Game(playerArray);
         ScoreCounter.updateScores(game);
         System.out.println("dobosz:"+red.getCurrentScore() +":"+blue.getCurrentScore()+":"+green.getCurrentScore());
+    }
+
+    @Test
+    public void testGame(){
+        Player green=createPlayerWithCards(CardType.CARD_2,CardType.DOBOSZ,CardType.CARD_3);
+        Player [] playerArray = {green};
+        Game game = new Game(playerArray);
+        game.setOurPlayer(green);
+        System.out.println("testGame:"+game.move());
+        System.out.println("testGame:"+game.move());
+        System.out.println("retrieve:"+game.retrieve());
+        System.out.println("testGame:"+game.move());
+        System.out.println("testGame:"+game.move());
+    }
+
+
+    @Test
+    public void testGame2(){
+        Player green=createPlayerWithCards(CardType.CARD_2,CardType.DOBOSZ,CardType.CARD_3);
+        Player [] playerArray = {green};
+        Game game = new Game(playerArray);
+        game.setOurPlayer(green);
+        System.out.println("testGame:"+game.condotiere());
+        System.out.println("testGame:"+game.condotiere());
+        System.out.println("retrieve:"+game.condotiere());
+        System.out.println("testGame:"+game.condotiere());
+        System.out.println("testGame:"+game.condotiere());
     }
 
 }
