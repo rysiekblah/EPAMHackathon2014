@@ -8,6 +8,8 @@ import com.realcoders.bot.Game;
 public class PlayHandler extends MessageHandler {
     @Override
     public void handle(String message, Game game) {
-        
+        String card = message.substring(message.indexOf(' ') + 1);
+        System.out.println("Player card: " + card);
+        game.currentPlayerPlay(HandHandler.mapa.get(card));
     }
 }
