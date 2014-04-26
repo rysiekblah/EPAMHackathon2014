@@ -45,6 +45,7 @@ public class MessageDispacher implements MessageProvider {
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
+                    break;
                 }
             }
         }
