@@ -37,4 +37,12 @@ public class Client {
         dataToArena.writeBytes(msg);
         return dataFromArena.readLine();
     }
+
+    public void sendMsg(String msg) throws IOException {
+        dataToArena.writeBytes(msg);
+    }
+
+    public String receiveMsg() throws IOException {
+        return dataFromArena.readLine();
+    }
 }
