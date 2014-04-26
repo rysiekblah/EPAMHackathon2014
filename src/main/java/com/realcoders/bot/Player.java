@@ -9,12 +9,15 @@ public class Player {
 	private final LinkedList<RegionMap> owned = new LinkedList<RegionMap>();
 	// private final Game game;
 	private int currentScore = 0;
+    private String name;
 
-	public Player(LinkedList<CardType> cards) {
+	public Player(LinkedList<CardType> cards, String name) {
 		this.cards = cards;
+        this.name = name;
 		// this.game = game;
 	}
 
+<<<<<<< HEAD
 	public void removeCard(CardType card) {
 		if (used.contains(card)) {
 			used.remove(card);
@@ -23,6 +26,19 @@ public class Player {
 		}
 	}
 
+=======
+    public String getName() {
+        return name;
+    }
+
+    public void removeCard(CardType card){
+        if (used.contains(card)) {
+            used.remove(card);
+        } else {
+            //throw new RuntimeException();
+        }
+    }
+>>>>>>> 69875b11e17c669054043bf3eeb3e98d15425327
 	public void playCard(CardType card) {
 		// if (cards.contains(card)) {
 		cards.removeFirstOccurrence(card);
@@ -55,4 +71,9 @@ public class Player {
 	public void setCurrentScore(int currentScore) {
 		this.currentScore = currentScore;
 	}
+
+    @Override
+    public String toString() {
+        return "PlayerName: " + name + ", cards: " + cards.toString();
+    }
 }

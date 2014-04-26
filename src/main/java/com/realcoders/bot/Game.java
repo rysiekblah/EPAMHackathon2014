@@ -7,12 +7,16 @@ import java.util.List;
 
 public class Game {
 
-	private final Player[] players;
+	private Player[] players;
     private Player ourPlayer;
     private ArrayList<Region> availableRegions= new ArrayList<Region>(Arrays.asList(Region.values()));
 
 
     private Region protectedRegion =null;
+
+    public Game() {
+
+    }
 
 	public Game(Player[] players) {
 		this.players = players;
@@ -29,6 +33,11 @@ public class Game {
     public void setOurPlayer(Player ourPlayer) {
         this.ourPlayer = ourPlayer;
     }
+
+    public void setPlayers(Player[] players) {
+        this.players = players;
+    }
+
     public CardType move(){
         CardType card = ourPlayer.getCards().get((int) (Math.random()*ourPlayer.getCards().size()));
         ourPlayer.playCard(card);

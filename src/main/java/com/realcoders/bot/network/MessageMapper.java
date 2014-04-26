@@ -42,7 +42,8 @@ public class MessageMapper {
         msgMap.put(ROUND_END, new RoundEndHandler());
         msgMap.put(BATTLE_START, new BattleStartHanlder());
         msgMap.put(BATTLE_END, new BattleEndHander());
-
+        msgMap.put(PLAYERS, new PlayersHandler());
+        msgMap.put(HAND, new HandHandler());
     }
 
     public MessageHandler getHandler(String message) {
