@@ -17,25 +17,34 @@ public class Strategy {
 	}
 
 	/*
-	 * true = sąsiedzi, false = regiony.
+	 * null = regiony, obiekt RegionMap = cele dla zajmowania
 	 */
-	boolean target(Player p) {
+	ArrayList<RegionMap> target(Player p) {
 		LinkedList<RegionMap> regs = p.getRegions();
 		byte numb = (byte) regs.size();
 		byte record = 0;
+		ArrayList<RegionMap> used = null;
 		if (numb >= 5)
-			return false;
+			return null;
 		else {
 			for (RegionMap reg : regs) {
 				byte cnt = (byte) this.getOwnedNeighbours(reg.getNeighbours(),
 						p).size();
-				if (cnt > record)
+				if (cnt > record) {
 					record = cnt;
+					used = new ArrayList<RegionMap>();
+					used.add(reg);
+				} else if (cnt == record) {
+					used.add(reg);
+				}
 			}
 			if (record >= 3)
-				return true;
+				return used;
 			else {
-				return (record > numb * 3 / 2);
+				if (record > numb * 3 / 2) {
+					return used;
+				} else
+					return null;
 			}
 		}
 	}

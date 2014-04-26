@@ -43,6 +43,8 @@ public class Client {
     }
 
     public String receiveMsg() throws IOException {
-        return dataFromArena.readLine();
+        String msg;
+        while((msg = dataFromArena.readLine()) == null);
+        return msg;
     }
 }
