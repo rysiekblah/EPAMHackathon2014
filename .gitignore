@@ -1,3 +1,5 @@
 .idea
 *.class
 target
+tb.txt
+rc.txt
