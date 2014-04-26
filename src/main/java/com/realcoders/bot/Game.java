@@ -9,8 +9,10 @@ public class Game {
 
 	private final Player[] players;
     private Player ourPlayer;
-    private ArrayList<RegionMap> availableRegions= (ArrayList<RegionMap>) Arrays.asList(RegionMap.values());
-    private RegionMap protectedRegion =null;
+    private ArrayList<Region> availableRegions= new ArrayList<Region>(Arrays.asList(Region.values()));
+
+
+    private Region protectedRegion =null;
 
 	public Game(Player[] players) {
 		this.players = players;
@@ -39,14 +41,22 @@ public class Game {
         ourPlayer.getCards().add(card);
         return card;
     }
-    public RegionMap condotiere(){
-        RegionMap region=null;
+    public Region condotiere(){
+        Region region=null;
         do {
             region = availableRegions.get((int) (Math.random() * availableRegions.size()));
-            availableRegions.remove(region);
-        }while (region != protectedRegion);
+        }while (region == protectedRegion);
+        availableRegions.remove(region);
         return region;
 
     }
 
+    public Region bishop(){
+        Region region=null;
+
+        region = availableRegions.get((int) (Math.random() * availableRegions.size()));
+        protectedRegion=region;
+        return region;
+
+    }
 }

@@ -97,11 +97,23 @@ public class ScoreCouterTest {
         Player [] playerArray = {green};
         Game game = new Game(playerArray);
         game.setOurPlayer(green);
-        System.out.println("testGame:"+game.condotiere());
-        System.out.println("testGame:"+game.condotiere());
-        System.out.println("retrieve:"+game.condotiere());
-        System.out.println("testGame:"+game.condotiere());
-        System.out.println("testGame:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
+        System.out.println("con:"+game.condotiere());
     }
 
 }
