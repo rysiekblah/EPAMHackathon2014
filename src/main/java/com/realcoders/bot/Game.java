@@ -39,10 +39,14 @@ public class Game {
     }
 
     public CardType move(){
-        CardType card = ourPlayer.getCards().get((int) (Math.random()*ourPlayer.getCards().size()));
+        CardType card=null;
+        do {
+           card = ourPlayer.getCards().get((int) (Math.random() * ourPlayer.getCards().size()));
+        }while(CardType.KUKLA.equals(card) && ourPlayer.getUsed().size()==0);
         ourPlayer.playCard(card);
-        //ourPlayer.getCards().remove(card);
+            //ourPlayer.getCards().remove(card);
         return card;
+
     }
 
     public CardType retrieve(){
