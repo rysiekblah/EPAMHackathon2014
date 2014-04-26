@@ -15,6 +15,8 @@ public class Client {
     private String host;
     private int port;
     private Socket socket;
+    private DataOutputStream dataToArena;
+    private BufferedReader dataFromArena;
 
     public Client(String host, int port) {
         this.host = host;
@@ -22,11 +24,9 @@ public class Client {
     }
 
     public void connect() throws IOException {
-        try {
-            socket = new Socket(host, port);
-        } catch (UnknownHostException e) {
-            System.out.println("Unknown host: " + host + ":" + port);
-        }
+        socket = new Socket(host, port);
+        dataToArena = new DataOutputStream(socket.getOutputStream());
+        dataFromArena = new BufferedReader(new InputStreamReader(socket.getInputStream()));
     }
 
     public void disconnect() throws IOException {
@@ -34,8 +34,6 @@ public class Client {
     }
 
     public String send(String msg) throws IOException {
-        DataOutputStream dataToArena = new DataOutputStream(socket.getOutputStream());
-        BufferedReader dataFromArena = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         dataToArena.writeBytes(msg);
         return dataFromArena.readLine();
     }
