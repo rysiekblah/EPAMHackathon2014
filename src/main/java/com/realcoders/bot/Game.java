@@ -37,6 +37,8 @@ public class Game {
     }
 
     public CardType move(){
+        if(ourPlayer.getCards().size()==0)
+            return null;
         CardType card=null;
         do {
            card = ourPlayer.getCards().get((int) (Math.random() * ourPlayer.getCards().size()));

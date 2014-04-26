@@ -28,12 +28,12 @@ public class MessageDispacher implements MessageProvider {
                         for(String line:temporary){
                             if(tmpMsg!=null){
                                 tmpMsg+=line+'\n';
-                                if(line.contains("]")){
+                                if(line.contains("]")||line.contains("}")){
                                     messages.add(tmpMsg);
                                     tmpMsg=null;
                                 }
 
-                            }else if(line.contains("[")){
+                            }else if(line.contains("[")||line.contains("{")){
                                 tmpMsg=line+'\n';
                             }else{
                                 messages.add(line);

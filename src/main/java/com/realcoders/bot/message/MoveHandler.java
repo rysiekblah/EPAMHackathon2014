@@ -14,10 +14,15 @@ public class MoveHandler extends MessageHandler {
     @Override
     public void handle(String message, Game game) {
         CardType cardType = game.move();
-        for (Map.Entry<String, CardType> typeEntry : HandHandler.mapa.entrySet()) {
-            if (typeEntry.getValue().equals(cardType)) {
-                MessageDispacher.send(typeEntry.getKey()+'\n');
+        if(cardType!=null) {
+            for (Map.Entry<String, CardType> typeEntry : HandHandler.mapa.entrySet()) {
+                if (typeEntry.getValue().equals(cardType)) {
+                    MessageDispacher.send(typeEntry.getKey() + '\n');
+                }
             }
+        }else{
+            MessageDispacher.send("pass\n");
+
         }
 
     }
