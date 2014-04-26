@@ -1,0 +1,99 @@
+Connection status: localhost/127.0.0.1, connected: trueGameStart
+Game START
+Players [
+TestBot
+RealCoders
+]
+
+MSG: Players [
+TestBot
+RealCoders
+]
+ END
+
+RoundStart 1
+Hand [
+3
+Scarecrow
+Scarecrow
+10
+Scarecrow
+4
+1
+Drummer
+Scarecrow
+1
+]
+
+MSG: Hand [
+3
+Scarecrow
+Scarecrow
+10
+Scarecrow
+4
+1
+Drummer
+Scarecrow
+1
+]
+ END
+
+PlayerName: RealCoders, cards: [CARD_3, KUKLA, KUKLA, CARD_10, KUKLA, CARD_4, CARD_1, DOBOSZ, KUKLA, CARD_1]
+BattleStart 1
+Order [
+TestBot
+RealCoders
+]
+
+CurrentZone Torino
+Zone to remove: Torino
+Player TestBot
+Play 2
+Score {
+TestBot=2
+RealCoders=0
+}
+
+Player RealCoders
+?Move
+cards: [CARD_3, KUKLA, KUKLA, CARD_10, KUKLA, CARD_4, CARD_1, DOBOSZ, KUKLA, CARD_1]
+usedcards[]
+Play 1
+Score {
+TestBot=2
+RealCoders=1
+}
+
+Player TestBot
+Play 5
+Score {
+TestBot=7
+RealCoders=1
+}
+
+Player RealCoders
+?Move
+cards: [CARD_3, KUKLA, KUKLA, CARD_10, KUKLA, CARD_4, DOBOSZ, KUKLA, CARD_1]
+usedcards[CARD_1]
+Play Scarecrow
+?Retrieve
+Retrieve 1
+Score {
+TestBot=7
+RealCoders=0
+}
+
+Player TestBot
+Play 3
+Score {
+TestBot=10
+RealCoders=0
+}
+
+Player RealCoders
+?Move
+cards: [CARD_3, KUKLA, CARD_10, KUKLA, CARD_4, DOBOSZ, KUKLA, CARD_1, CARD_1]
+usedcards[KUKLA, CARD_1]
+Play Scarecrow
+?Retrieve
