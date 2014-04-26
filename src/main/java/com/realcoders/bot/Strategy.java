@@ -69,7 +69,7 @@ public class Strategy {
 		if (target != null) {
 			for (RegionMap t : target) {
 				if (t.getNeighboursOwnedBy(p).size() == 3
-						&& t.getFreeRegionNeighbours(g).size() > 0)
+						&& t.getFreeRegionNeighbours(game).size() > 0)
 					return 127;
 			}
 		} else {
@@ -79,4 +79,30 @@ public class Strategy {
 		return 0;
 	}
 
+	public CardType getOptimalMove(Player p, RegionMap r) {
+		if (p.getCards().size() == 0)
+			return null;
+		boolean use = getRegionUsage(r, p) > 0;
+		LinkedList<CardType> cards = p.getCards();
+		Player[] pl = game.getPlayers();
+		for (CardType card : cards) {
+			if (card.equals(CardType.BOHATERKA)
+					|| card.equals(CardType.CARD_10)
+					|| card.equals(CardType.WIOSNA)
+					|| card.equals(CardType.KURTYZANA)) {
+				return card;
+			}
+		}
+		for (CardType card : cards) {
+			if (!card.equals(CardType.KAPITULACJA)) {
+				return card;
+			}
+		}
+		for (CardType card : cards) {
+			if (card.equals(CardType.KAPITULACJA)) {
+				return card;
+			}
+		}
+		return null;
+	}
 }
